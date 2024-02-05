@@ -16,7 +16,7 @@ const videoComponent = () => {
         playsInline
         preload="metadata"
       >
-        <source src="/assets/hero-video.mp4" type="video/mp4" />
+        <source src="/assets/hero.mp4" type="video/mp4" />
         <Image src="/assets/hero-unilend.png" alt="poster" width={100} height={100} />
       </video>
      
