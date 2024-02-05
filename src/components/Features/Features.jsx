@@ -43,7 +43,7 @@ const Features = () => {
                   }}>
                 <Image alt="" className="image-icon" src={Image1} />
               </motion.div>
-              <h3 className="h3 ">Concentrated Liquidaion</h3>
+              <h3 className="f-text">Concentrated Liquidaion</h3>
             </div>
             <div className="content-container">
               <div className="bg-bx">
@@ -61,7 +61,7 @@ const Features = () => {
                   src={Image2}
                 />
               </motion.div>
-              <h3 className="h3 ">Dual asset pool</h3>
+              <h3 className="f-text">Dual asset pool</h3>
             </div>
             <div className="content-container">
               <div className="bg-bx">
@@ -79,7 +79,7 @@ const Features = () => {
                   src={Image3}
                 />
               </motion.div>
-              <h3 className="h3 ">Flexible pricing</h3>
+              <h3 className="f-text">Flexible pricing</h3>
             </div>
             <div className="content-container">
               <div className="bg-bx">
@@ -97,7 +97,7 @@ const Features = () => {
                   src={Image4}
                 />
               </motion.div>
-              <h3 className="h3 ">Governance</h3>
+              <h3 className="f-text">Governance</h3>
             </div>
             <div className="content-container">
               <div className="bg-bx">
@@ -115,7 +115,7 @@ const Features = () => {
                   src={Image5}
                 />
               </motion.div>
-              <h3 className="h3 ">Nft</h3>
+              <h3 className="f-text">Nft</h3>
             </div>
             <div className="content-container">
               <div className="bg-bx">
@@ -133,7 +133,7 @@ const Features = () => {
                   src={Image6}
                 />
               </motion.div>
-              <h3 className="h3 ">Permissionless listing</h3>
+              <h3 className="f-text">Permissionless listing</h3>
             </div>
           </div>
         </div>
