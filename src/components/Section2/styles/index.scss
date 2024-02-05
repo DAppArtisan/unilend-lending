@@ -43,13 +43,13 @@
       content: "";
       position: absolute;
       overflow: hidden;
-      height: 750px;
-      width: 730px;
+      height: 715px;
+      width: 570px;
       z-index: -1;
       background-repeat: no-repeat;
       background-image: url("../../../../public/assets//f2back.svg");
       background-size: cover;
-      @include lessThan(lg) {
+      @include lessThan(sm) {
         display: none;
       }
     }

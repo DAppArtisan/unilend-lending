@@ -9,8 +9,8 @@ import RedGradient from "../../../public/assets/red.svg";
 // import SpotlightButton from "./SpotlightButton/SpotlightButton";
 import { motion } from "framer-motion";
 const index = () => (
-  <section className="section1 padding-block-900 ">
-    <div className="container gradient">
+  <section className="section1 padding-block-900">
+    <div className="container">
       <div className="even-colums">
         <motion.div
           initial={{ opacity: 0.3, y: 100 }}
@@ -53,8 +53,9 @@ const index = () => (
           initial={{ opacity: 0.3, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeInOut", duration: 0.8 }}
-          className="boxx"
+          className="boxx gradient"
         >
+          {/* <Image className="gradient"  src={RedGradient} alt="gradient"/> */}
           <Image className="mainImage" src={Image1} alt="permissionless" />
         </motion.div>
       </div>

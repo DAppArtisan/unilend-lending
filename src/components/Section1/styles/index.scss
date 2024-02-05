@@ -35,15 +35,18 @@
       content: "";
       position: absolute;
       overflow: hidden;
-      width: 73%;
-      height: 100%;
+      width: 590px;
+      height: 800px;
       z-index: -1;
-      background-position: right;
+      background-position: top 11rem;
       background-repeat: no-repeat;
       background-image: url("../../../../public/assets//red.svg");
-      @include lessThan(lg) {
-        width: 0%;
-      }
+      //  border: 1px solid #fff;
+    @include lessThan(sm){
+      display: none;
+    }
+      
+ 
     }
   }
 }
