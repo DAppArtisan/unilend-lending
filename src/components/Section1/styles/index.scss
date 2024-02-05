@@ -35,13 +35,12 @@
       content: "";
       position: absolute;
       overflow: hidden;
-      width: 38%;
-      height: 800px;
+      width: 73%;
+      height: 100%;
       z-index: -1;
-      background-position: top 11rem;
+      background-position: right;
       background-repeat: no-repeat;
       background-image: url("../../../../public/assets//red.svg");
-      //  border: 1px solid #fff;
       @include lessThan(lg) {
         width: 0%;
       }
