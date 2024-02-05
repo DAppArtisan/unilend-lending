@@ -47,9 +47,8 @@
       width: 570px;
       z-index: -1;
       background-repeat: no-repeat;
-      background-image: url("../../../../public/assets//f2back.svg");
+      background-image: url("../../../../public/assets//bluebg.svg");
       background-size: cover;
-     
       @include lessThan(sm) {
         display: none;
       }
