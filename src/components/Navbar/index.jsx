@@ -48,7 +48,7 @@ const Navbar = () => {
                 <a href="#">Blogs</a>
               </li>
               <li>
-                <a href="#"> Brand Kit</a>
+                <a href="#">Brand Kit</a>
               </li>
             </motion.ul>
             <Link href="#"> 

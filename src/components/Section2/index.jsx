@@ -2,9 +2,9 @@
 import Image from "next/image";
 import "./styles/index.scss";
 import Image1 from "../../../public/assets/box_gif.gif";
-import Icon1 from "../../../public/assets/icon1.svg";
-import Icon2 from "../../../public/assets/icon2.svg";
-import Icon3 from "../../../public/assets/icon3.svg";
+import Icon1 from "../../../public/assets/p1.svg";
+import Icon2 from "../../../public/assets/p2.svg";
+import Icon3 from "../../../public/assets/p3.svg";
 import { Isolated } from "../../../public/assets";
 
 import { motion } from "framer-motion";
