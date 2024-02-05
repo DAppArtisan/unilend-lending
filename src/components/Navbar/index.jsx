@@ -51,6 +51,7 @@ const Navbar = () => {
                 <a href="#"> Brand Kit</a>
               </li>
             </motion.ul>
+            <Link href="#"> 
             <motion.button
               variants={textVariants}
               initial="initial"
@@ -59,6 +60,8 @@ const Navbar = () => {
             >
               V1 App
             </motion.button>
+            </Link>
+            <Link href="#">
             <motion.button
               variants={textVariants}
               initial="initial"
@@ -67,6 +70,7 @@ const Navbar = () => {
             >
               V2 App
             </motion.button>
+            </Link>
               <div className="hamIcon"> <Image  src={Hamburger} /></div>
            
           </nav>
