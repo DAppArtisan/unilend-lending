@@ -231,12 +231,12 @@ $primaryText: #202f44;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  background-color: $primary;
+  background: linear-gradient(to bottom right, #6E3EFF, #4526FF);
   border: 1px solid $primary;
   color:$white;
   font-size: clamp(0.625rem, 0.534rem + 0.3883vw, 1rem);
   &:hover {
-    background-color: $border-button-hover;
+    background: $border-button-hover;
     scale: 1;
     border: 1px solid $border-button-hover;
   }

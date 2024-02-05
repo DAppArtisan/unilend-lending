@@ -17,7 +17,8 @@ const videoComponent = () => {
         preload="metadata"
       >
         <source src="/assets/hero.mp4" type="video/mp4" />
-        <Image src="/assets/hero-unilend.png" alt="poster" width={100} height={100} />
+        <source src="/assets/ip.ogg" type="video/ogg" />
+        <Image src="/assets/hero-unilend.png" alt="poster" width={1920} height={1024} />
       </video>
      
     </div>

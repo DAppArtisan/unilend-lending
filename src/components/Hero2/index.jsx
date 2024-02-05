@@ -37,9 +37,9 @@ const hero = () => {
           </div>
         </div>
       <div className="bg-image"></div>
-      <Suspense fallback={<p>Loading video...</p>}>
+     
         <Video />
-      </Suspense>
+    
       </div>
     </section>
   );
