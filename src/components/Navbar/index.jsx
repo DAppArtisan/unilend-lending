@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./styles/index.scss";
 import styles from "./styles/style.module.scss";
 import Link from "next/link";
@@ -15,6 +15,12 @@ const textVariants = {
 };
 
 const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <header className="primary-header relative">
       <div className="wrapper">
@@ -51,29 +57,42 @@ const Navbar = () => {
                 <a href="#">Brand Kit</a>
               </li>
             </motion.ul>
-            <Link href="#"> 
-            <motion.button
-              variants={textVariants}
-              initial="initial"
-              animate="animate"
-              className="button main-btn"
-            >
-              V1 App
-            </motion.button>
+            <Link href="#">
+              <motion.button
+                variants={textVariants}
+                initial="initial"
+                animate="animate"
+                className="button main-btn"
+              >
+                V1 App
+              </motion.button>
             </Link>
             <Link href="#">
-            <motion.button
-              variants={textVariants}
-              initial="initial"
-              animate="animate"
-              className="button main-btn"
-            >
-              V2 App
-            </motion.button>
+              <motion.button
+                variants={textVariants}
+                initial="initial"
+                animate="animate"
+                className="button main-btn"
+              >
+                V2 App
+              </motion.button>
             </Link>
-            <div className="side_bx">
-              <div className="hamIcon"> <Image  src={Hamburger} /></div>
+
+            <div className="dropdownContainer">
+              <div className="side_bx">
+                <div className="hamIcon" onClick={toggleDropdown}>
+                  <Image src={Hamburger} />
+                </div>
               </div>
+              {isDropdownOpen && (
+                <div className="dropdownContent">
+                  <a href="#">Home</a>
+                  <a href="#">Developers</a>
+                  <a href="#">Blogs</a>
+                  <a href="#">Brand Kit</a>
+                </div>
+              )}
+            </div>
           </nav>
         </div>
       </div>
