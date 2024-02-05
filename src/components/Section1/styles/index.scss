@@ -1,0 +1,50 @@
+@import "../../../styles";
+.section1 {
+  position: relative;
+ 
+
+  .in-bx {
+    padding-top: $size-500;
+    padding-bottom: $size-500;
+    .inn-bx {
+      padding-top: $size-400;
+      @include lessThan(md) {
+        padding-top: $size-100;
+      }
+    }
+  }
+  .second-btn {
+    color: $white;
+    height: 60px;
+    width: 210px;
+    &:hover {
+      background-color: $border-button-hover;
+      scale: 1;
+      box-shadow: $base-box-shadow;
+      border: 1px solid $border-button-hover;
+    }
+  }
+
+  .mainImage{
+    width: clamp(30rem, 32.6699rem + -11.3916vw, 19rem);
+    height: clamp(30rem, 32.6699rem + -11.3916vw, 19rem);
+  }
+
+  .gradient {
+    &:before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      width: 48%;
+      height: 800px;
+      z-index: -1;
+      background-position: top 11rem;
+      background-repeat: no-repeat;
+      background-image: url("../../../../public/assets//red.svg");
+      //  border: 1px solid #fff;
+      @include lessThan(lg) {
+        width: 0%;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../../styles";
+
+.outer_bx {
+  gap: 11.5rem;
+  display: flex;
+  justify-content: center;
+  @include lessThan(md) {
+    gap: 3.5rem;
+  }
+  @include lessThan(sm) {
+    gap: 3rem;
+  }
+  @include lessThan(lg) {
+    gap: 4rem;
+  }
+  // @include lessThan(xl){
+  //   gap:5rem;
+  // }
+  .in_bx {
+    width: 400px;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 0.947px solid #342c65;
+    background: linear-gradient(
+      134deg,
+      rgba(71, 54, 177, 0.49) 20.53%,
+      rgba(58, 43, 147, 0.23) 97.99%
+    );
+    box-shadow: -3px 5px 36px 3px #20004c;
+    backdrop-filter: blur(12.790874481201172px);
+    @include lessThan(md) {
+      width: 210px;
+      height: 70px;
+    }
+    @include lessThan(sm) {
+      width: 200px;
+      height: 60px;
+    }
+    // @include lessThan(lg){
+    //   width: 250px;
+    //   height: 100px;
+    // }
+    // @include lessThan(xl){
+    //   width: 320px;
+    //   height: 120px;
+    // }
+    img {
+      height: 65px;
+      width: 292px;
+      @include lessThan(md) {
+        width: 120px;
+        height: 60px;
+      }
+      @include lessThan(sm) {
+        width: 100px;
+        height: 50px;
+      }
+      // @include lessThan(lg){
+      //   width: 180px;
+      //   height: 90px;
+      // }
+      //  @include lessThan(xl){
+      //   width: 180px;
+      //   height: 90px;
+      // }
+    }
+  }
+}

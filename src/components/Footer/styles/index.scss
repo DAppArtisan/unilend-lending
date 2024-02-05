@@ -1,0 +1,158 @@
+@import "../../../styles";
+.footer {
+  .common-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include lessThan(sm) {
+    padding: 10px .2rem 0;
+    }
+
+    .footer-container {
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+      // padding-left: 5rem;
+      @include lessThan(sm){
+        gap: 1rem;
+        padding-left: 0;
+        position: relative;
+      }
+      @include lessThan(xl){
+        gap: 1rem;
+        padding-left: 0;
+        position: relative;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        list-style-type: none;
+       
+        .footer-title {
+          color: $white;
+          font-size: clamp(1.125rem, 0.9865rem + 0.6926vw, 1.625rem);
+          font-weight: 700;
+          line-height: 29px;
+          margin-bottom: 2rem;
+          list-style: none;
+          @include lessThan(sm){
+           margin: 1rem 0 0!important
+          }
+        }
+        .sub-text{
+          color: #fff;
+          font-size: clamp(0.75rem, 0.6288rem + 0.6061vw, 1.1875rem);
+          transition: opacity .3s,color .3s;
+        }
+        .subscribe-text{
+         font-size: clamp(0.75rem, 0.6288rem + 0.6061vw, 1.1875rem);;
+          color: #fff;
+          @include lessThan(sm){
+            display: none;
+           }
+        }
+        .footer-input-content {
+          align-items: center;
+          border: none;
+          border-bottom: 1px solid;
+          display: flex;
+          justify-content: space-between;
+          width: 60%;
+          @include lessThan(sm){
+            width: 100%;
+          }
+          .footer-input {
+            border: none;
+            font-size: 15.216px;
+            outline: none;
+            padding: 0.5rem 0;
+            width: 100%;
+            color: $white;
+            background: $bg-primary;
+            img {
+              height: 17px;
+              width: 20px;
+            }
+          }
+          
+        }
+        .logo-content {
+            align-items: center;
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            @include lessThan(sm){
+              display: none;
+            }
+            @include lessThan(xl){
+                gap:1.2rem;
+            }
+            img{
+              color: aqua;
+              &:hover{
+                color: $primary;
+              }
+            }
+            
+          }
+          .sub-text:hover{
+            color: $primary;
+          }
+      }
+
+      .footer-first-chield {
+        position: relative;
+      }
+
+    }
+    .social-media-container {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+      padding: 1rem 20% 1rem 15rem;
+      position: relative;
+      width: 100%;
+    
+      .logo-content-web {
+        left: -2.5rem;
+        position: absolute;
+        top: -3rem;
+        img{
+          height: 43px;
+        }
+        @media (min-width:320px) and (max-width: 767px) {
+          display: none;
+        }
+       
+       
+       
+       
+      }
+    }
+  }
+  .copyright{
+    align-items: center;
+    border-top: 1.08686px solid #444;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 6%;
+    .text-in{
+        color: $white;
+        font-size: $font-size-md;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 2rem;
+        @include lessThan(sm){
+          font-size: $font-size-sm;
+          text-align: center;
+        }
+    }
+  }
+}

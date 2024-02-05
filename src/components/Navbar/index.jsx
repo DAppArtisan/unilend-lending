@@ -1,0 +1,79 @@
+"use client";
+import { useEffect, useState } from "react";
+import "./styles/index.scss";
+import styles from "./styles/style.module.scss";
+import Link from "next/link";
+import Image from "next/image";
+import Logo from "../../../public/assets/logo.svg";
+import Hamburger from "../../../public/assets/hamburger.svg";
+import { motion, AnimatePresence } from "framer-motion";
+
+const textVariants = {
+  initial: { opacity: 0, scale: 0.5 },
+  animate: { opacity: 1, scale: 1 },
+  transition: { duration: 1 },
+};
+
+const Navbar = () => {
+  return (
+    <header className="primary-header relative">
+      <div className="wrapper">
+        <div className="nav-wrapper">
+          <motion.span
+            variants={textVariants}
+            initial="initial"
+            animate="animate"
+          >
+            <Link href="#">
+              <Image src={Logo} width="auto" height="auto" alt="Logo" />
+            </Link>
+          </motion.span>
+
+          <nav className="primary-navigation">
+            <motion.ul
+              variants={textVariants}
+              initial="initial"
+              animate="animate"
+              aria-label="Primary"
+              role="list"
+              className="nav-list"
+            >
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Developers</a>
+              </li>
+              <li>
+                <a href="#">Blogs</a>
+              </li>
+              <li>
+                <a href="#"> Brand Kit</a>
+              </li>
+            </motion.ul>
+            <motion.button
+              variants={textVariants}
+              initial="initial"
+              animate="animate"
+              className="button main-btn"
+            >
+              V1 App
+            </motion.button>
+            <motion.button
+              variants={textVariants}
+              initial="initial"
+              animate="animate"
+              className="button main-btn"
+            >
+              V2 App
+            </motion.button>
+              <div className="hamIcon"> <Image  src={Hamburger} /></div>
+           
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;

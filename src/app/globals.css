@@ -1,0 +1,343 @@
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src: url("../fonts/general/GeneralSans-Regular.otf") format("opentype");
+  ascent-override: 90%;
+  vertical-align: text-bottom;
+}
+@font-face {
+  font-family: "Sans Serif Semi bold";
+  font-weight: bold;
+  font-style: bold;
+  font-display: block;
+  src: url("../fonts/general/GeneralSans-Semibold.otf") format("opentype");
+  ascent-override: 90%;
+  vertical-align: text-bottom;
+}
+
+@font-face {
+  font-family: "Sans Serif Medium";
+  font-weight: medium;
+  font-style: Medium;
+  font-display: block;
+  src: url("../fonts/general/GeneralSans-Medium.otf") format("opentype");
+  ascent-override: 90%;
+  vertical-align: text-bottom;
+}
+
+:root {
+  --clr-accent-400: hsl(12, 88%, 59%);
+  --clr-accent-100: hsl(13, 100%, 96%);
+
+  --clr-primary-400: #ffffff;
+
+  --clr-neutral-100: hsl(232, 12%, 13%);
+  --clr-neutral-900: hsl(0 0% 0%);
+  --clr-white:#ffffff;
+  --clr-secondary:#4b2eff;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 0.9375rem;
+  --fs-600: 1rem;
+  --fs-700: 1.875rem;
+  --fs-800: 2.875rem;
+  --fs-900: 3rem;
+
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-900);
+  --fs-secondary-heading: var(--fs-800);
+  --fs-nav: var(--fs-500);
+  --fs-button: var(--fs-300);
+
+  --size-100:0.875rem; /*14px*/
+  --size-200: 1rem; /*16px*/
+  --size-300: 1.75rem;  /*28px*/
+  --size-400: 2rem;
+  --size-500: 2.5rem;
+  --size-600: 3rem;
+  --size-700: 3.5rem;
+  --size-800: 4rem;
+  --size-900: 4.875rem;
+  
+}
+
+
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+li{
+  list-style: none;
+}
+/* Set core body defaults */
+body {
+  font-family: "Sans Serif Medium";
+  line-height: 1.5;
+  position: relative;
+}
+
+/* A elements that don't have a class get default styles */
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+  
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  
+}
+
+/* Utility classes */
+
+
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
+}
+.bg-accent-100 {
+  background-color: var(--clr-accent-100);
+}
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+.padding-block-100{
+  padding-block:var(--size-100);   
+}
+.padding-block-200{
+  padding-block:var(--size-200);   
+}
+.padding-block-300{
+  padding-block:var(--size-300);   
+}
+.padding-block-400{
+  padding-block:var(--size-400);   
+}
+.padding-block-500{
+  padding-block:var(--size-500);   
+}
+.padding-block-600{
+  padding-block:var(--size-600);   
+}
+.padding-block-700{
+  padding-block:var(--size-700);   
+}
+.padding-block-800{
+  padding-block: var(--size-800);
+}
+.padding-block-900{
+  padding-block:var(--size-900);   
+}
+.padding-top-100{
+  padding-top: 1rem;
+}
+.padding-top-200{
+  padding-top: 2rem;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+
+.container{
+  --max-width:1315px;
+  --padding:1rem;
+  width:min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+
+.container2{
+  --max-width:1475px;
+  --padding:1rem;
+  width:min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+
+}
+.container3{
+  --max-width:1600px;
+  --padding:1rem;
+  width:min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+
+}
+
+
+:where(.flow:not(:first-child)) {
+  margin-top: var(--flow-spacer, .875em);
+}
+@media screen and (max-width:800px) {
+ .flow{
+  padding-top: 1rem !important;
+ }
+}
+
+.flex{
+  display: flex;
+ align-items: center;
+ 
+}
+/* .even-colums{
+  display:grid;
+  gap:10rem;
+  place-items: center;
+}
+.col1 {
+  order: 2; 
+}
+.col2 {
+  order: 1; 
+} */
+
+/* @media (min-width :50em){
+  .even-colums{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+  .col1 {
+    order: 1; 
+  }
+  .col2 {
+    order: 2;
+  }
+} */
+
+@media (min-width :50em){
+   .even-block{
+    grid-auto-flow: column;
+    grid-auto-columns: 2fr 3fr;
+  }
+}
+
+.even-block{
+  display:grid;
+  gap:2rem;
+}
+
+.absolute{
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.even-colums {
+  display: grid;
+  gap: 2.5rem 7.5rem;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(min(25.7rem, 100%), 1fr));
+}
+
+body{
+  font-size:var(--fs-body);
+  color: var(--clr-primary-400);
+  background-color: #110F1B;
+}
+.relative {
+  position: relative;
+}
+a{
+  text-decoration: none;
+}

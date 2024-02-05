@@ -1,0 +1,57 @@
+@import "../../../styles";
+.section2 {
+  position: relative;
+ 
+  .col1 {
+    order: 2;
+  }
+  .col2 {
+    order: 1;
+  }
+
+  @media (min-width: 50em) {
+    .even-colums {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
+    .col1 {
+      order: 1; /* Change order for larger screens */
+    }
+    .col2 {
+      order: 2; /* Change order for larger screens */
+    }
+  }
+
+  position: relative;
+  .in-bx {
+    padding-top: $size-500;
+    padding-bottom: $size-500;
+    .inn-bx {
+      padding-top: $size-400;
+      @include lessThan(md) {
+        padding-top: $size-100;
+      }
+    }
+  }
+  .mainImage{
+    
+    width: clamp(30rem, 32.6699rem + -11.3916vw, 19rem);
+    height: clamp(30rem, 32.6699rem + -11.3916vw, 19rem);
+  }
+  .gradient {
+    &:before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      height: 750px;
+      width: 730px;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-image: url("../../../../public/assets//f2back.svg");
+      background-size: cover;
+      @include lessThan(lg) {
+        display: none;
+      }
+    }
+  }
+}

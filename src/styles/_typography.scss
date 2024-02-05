@@ -1,0 +1,255 @@
+/* https://www.figma.com/file/OurH2BHGnazMiiS69TqWcc/UI4---Design-System?node-id=2239%3A2282 */
+// @import './variables';
+@import "./breakpoints";
+@import "./colors";
+@import "./variables";
+$primaryText: #202f44;
+// $headingFontFamily: var(--font-montserrat;
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src: url("../fonts/general/GeneralSans-Regular.otf") format("opentype");
+  ascent-override: 90%;
+  vertical-align: text-bottom;
+}
+@font-face {
+  font-family: "Sans Serif Regular";
+  font-weight: bold;
+  font-style: bold;
+  font-display: block;
+  src: url("../fonts/general/GeneralSans-Regular.otf") format("opentype");
+  ascent-override: 90%;
+  vertical-align: text-bottom;
+}
+
+@font-face {
+  font-family: "Sans Serif Medium";
+  font-weight: medium;
+  font-style: Medium;
+  font-display: block;
+  src: url("../fonts/general/GeneralSans-Medium.otf") format("opentype");
+  ascent-override: 90%;
+  vertical-align: text-bottom;
+} 
+@font-face {
+  font-family: "Sans Serif Semi Bold";
+  font-weight: bold;
+  font-style: bold;
+  font-display: block;
+  src: url("../fonts/general/GeneralSans-Semibold.otf") format("opentype");
+  ascent-override: 90%;
+  vertical-align: text-bottom;
+} 
+
+.heading01 {
+  color: $white;
+  text-align: center;
+  font-family: "Sans Serif Medium";
+  letter-spacing: unset;
+  margin: unset;
+  font-style: normal;
+  font-weight: $font-weight-extra-bold;
+  font-size: clamp(1.625rem, 1.244rem + 1.9048vw, 3rem);// 48px
+  // line-height: $font-size-lg-6 * $line-height-sm;
+  line-height: $line-height-sm;
+  &.mobile {
+    font-weight: $font-weight-extra-bold;
+  font-size:$font-size-lg-3; // 36px
+    // line-height: $font-size-lg-3 * $line-height-sm;
+    line-height: $line-height-sm;
+  }
+}
+.secondary-heading01{
+  letter-spacing: unset;
+  margin: unset;
+  font-style: normal;
+  font-family: "Sans Serif Regular";
+  color: $sub-heading;
+  font-weight: $font-weight-regular;
+  font-size: clamp(1rem, 0.8788rem + 0.6061vw, 1.4375rem); //22px
+  line-height: $line-height-sm;
+  padding-top: $size-600;
+  @include lessThan(md){
+    line-height: $line-height-base;
+  }
+}
+
+.heading02{
+  color: $white;
+  font-family: "Sans Serif Medium";
+  margin: unset;
+  font-style: normal;
+  font-weight: $font-weight-extra-bold;
+  font-size: clamp(1.625rem, 1.244rem + 1.9048vw, 3rem); // 48px
+  // line-height: $font-size-lg-6 * $line-height-sm;
+  line-height: $line-height-sm;
+  letter-spacing: 1px;
+  // line-height: 4.375rem;
+  &.mobile {
+    font-weight: $font-weight-extra-bold;
+  font-size:$font-size-lg-3; // 36px
+    // line-height: $font-size-lg-3 * $line-height-sm;
+    line-height: $line-height-sm;
+  }
+}
+
+
+.secondary-heading02 {
+  letter-spacing: unset;
+  margin: unset;
+  font-style: normal;
+  font-family: "Sans Serif Regular";
+  color: $sub-heading;
+  font-weight: $font-weight-regular;
+  font-size: clamp(1rem, 0.8788rem + 0.6061vw, 1.4375rem); 
+  line-height: 2rem;
+  padding-top: $size-600;
+   @include lessThan(md){
+    line-height:$line-height-base;
+   }
+   @include lessThan(sm){
+   padding-top: var(--size-200);
+   }
+}
+
+.heading03{
+  color: $white;
+  font-family: "Sans Serif Medium";
+  margin: unset;
+  font-style: normal;
+  font-weight: $font-weight-extra-bold;
+  font-size: clamp(1.625rem, 1.244rem + 1.9048vw, 3rem); // 48px
+  // line-height: $font-size-lg-6 * $line-height-sm;
+  line-height: $line-height-sm;
+  letter-spacing: 1px;
+
+  &.mobile {
+    font-weight: $font-weight-extra-bold;
+  font-size:$font-size-lg-3; // 36px
+    // line-height: $font-size-lg-3 * $line-height-sm;
+    line-height: $line-height-sm;
+  }
+}
+
+
+.heading04 {
+  color: $white;
+  text-align: left;
+  font-family: "Sans Serif Semi Bold";
+  letter-spacing: unset;
+  margin: unset;
+  font-style: normal;
+  font-weight: $font-weight-extra-bold;
+  font-size: clamp(2rem, 1.4741rem + 2.6295vw, 4.0625rem);
+  line-height: $line-height-sm;
+   @include lessThan(md){
+    text-align: center;
+   }
+   @include lessThan(sm){
+    text-align: center;
+   }
+}
+.paragraph01 {
+  color: $sub-heading;
+  text-align: left;
+  letter-spacing: unset;
+  margin: unset;
+  font-family: "Sans Serif Regular";
+  font-style: normal;
+  font-weight: $font-weight-regular; //400
+  font-size: clamp(0.75rem, 0.6807rem + 0.3463vw, 1rem); 
+  // line-height: $font-size-lg * $line-height-sm;
+  line-height: 25px;
+  padding-left: 1rem;
+  @include lessThan(md){
+    line-height:1.6rem;
+   }
+}
+
+.paragraph02 {
+  color: $white;
+  text-align: center;
+  letter-spacing: unset;
+  font-family: "Sans Serif Regular";
+  margin: unset;
+  font-style: normal;
+  font-weight: $font-weight-regular; //400
+  font-size: clamp(0.75rem, 0.6807rem + 0.3463vw, 1rem); // 16px
+  // line-height: $font-size-lg * $line-height-sm;
+  line-height: 21px;
+  
+  &.mobile {
+     font-size:$font-size-xsm; //12px
+  }
+}
+
+
+.button{
+  display: flex;
+  font-family: "Sans Serif Medium";
+  width: 9.5rem;
+  height: 2.5rem;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  color:$white;
+  font-size: clamp(0.625rem, 0.534rem + 0.3883vw, 1rem);
+  transition: opacity .3s,background-color .3s;
+  &:hover {
+    background-color: $border-button-hover;
+    scale: 1;
+    border: 1px solid $border-button-hover;
+  }
+  @include lessThan(sm) {
+    height: 2rem;
+    width:5rem;
+   
+    }
+    @include lessThan(md) {
+      height: 2rem;
+      width:4rem;
+      
+      }
+      @include lessThan(lg) {
+        height: 2rem;
+        width:5rem;
+        }
+
+}
+
+
+.button2{
+  display: flex;
+  width: 210px;
+  height:60px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  color:$white;
+  font-size: clamp(0.625rem, 0.534rem + 0.3883vw, 1rem);
+  &:hover {
+    background-color: $border-button-hover;
+    scale: 1;
+    border: 1px solid $border-button-hover;
+  }
+  @include lessThan(sm) {
+    height: var(--size-200);
+    width:5rem;
+    font-size: $font-size-xsm;
+    }
+    @include lessThan(md) {
+      height: 2.5rem;
+      width:6rem;
+      font-size: $font-size-xxsm;
+      }
+    
+
+}

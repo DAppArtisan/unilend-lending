@@ -1,0 +1,17 @@
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$primary: hsl(248, 100%, 59%);
+$secondary:hsl(258, 29%, 9%);
+$bg-primary: hsl(250, 29%, 8%);
+$voilet:hsl(258, 29%, 75%);
+$sub-heading:hsl(221, 15%, 57%);
+
+$base-box-shadow-mobile: 4px -4.5px 0 -1.5px #f6f7f9, 4px -4.5px 0 0 #333;
+$base-box-shadow: 0 15px 56px 0 hsl(244.62deg 85.45% 62.11%);
+$border-button-hover:hsl(248, 92%, 41%);
+
+$gradient:linear-gradient(
+    180deg,
+    hsl(248, 100%, 59%) -217.66%,
+    hsla(248, 100%, 59%, 0) 100%
+  );

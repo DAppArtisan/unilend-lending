@@ -1,0 +1,129 @@
+@import "../../../styles";
+.hero-wrapper {
+  height: 100dvh;
+  padding-top: 7rem;
+  padding-bottom: 200px;
+  @include lg{
+    padding-top: 4rem;
+    padding-bottom: 35px;
+    height: 62vh;
+  }
+
+  @media (min-width:320px) and (max-width: 480px) {
+    height: 70vh;
+  }
+ 
+ 
+
+  .hero-info-container {
+    width: 100%;
+    .hero-info {
+      position: relative;
+      z-index: 999;
+      display: flex;
+      width: 576px;
+      flex-direction: column;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      @include xl {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .button-outer {
+        @include lessThan(md) {
+          margin-inline: auto;
+        }
+        @include lessThan(sm) {
+          margin-inline: auto;
+        }
+      }
+      button {
+        margin-top: var(--size-500) !important;
+       @include lessThan(lg){
+        margin-top:1rem !important;
+       }
+      }
+    }
+  }
+}
+
+.bg-image {
+  background-image: url("../../../../public/assets/gr--red.svg");
+  background-repeat: no-repeat;
+  background-position: top right -14rem;
+  position: absolute;
+  top: -22%;
+  right: 0;
+  width: 318px;
+  height: 355px;
+  @include lessThan(md) {
+    display: none;
+  }
+}
+.bg-1 {
+  background-position: top center;
+}
+.hero-section {
+
+  .hero-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, #110f1b 10%);
+    mask-image: linear-gradient(to top, transparent 1%, #110f1b 30%);
+    @include xl{
+      object-fit: contain;
+     padding-top: 2rem;
+     position: relative;
+    }
+   
+  }
+  .fallbackImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+  }
+}
+.banner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  // gap: 1rem;
+  justify-content: space-between;
+  margin: auto;
+  height: auto;
+  overflow: hidden;
+  // background: url("../../../../public/assets/hero-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .banner-sub {
+    height: 300px;
+    width: 100%;
+  }
+  .hero-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 2500px;
+  }
+  img {
+    @include lessThan(sm) {
+      width: 350px;
+      height: auto;
+    }
+  }
+}
