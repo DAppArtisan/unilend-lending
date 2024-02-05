@@ -71,8 +71,9 @@ const Navbar = () => {
               V2 App
             </motion.button>
             </Link>
+            <div className="side_bx">
               <div className="hamIcon"> <Image  src={Hamburger} /></div>
-           
+              </div>
           </nav>
         </div>
       </div>

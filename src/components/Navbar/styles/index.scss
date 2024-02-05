@@ -47,16 +47,22 @@
       }
     }
   }
-
-  .hamIcon{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   img{
-    width: 25px;
-    height: 30px;
-   }
+.side_bx{
+  display: none;
+  @include lessThan(md){
+    display: block;
   }
+  .hamIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+     width: 25px;
+     height: 30px;
+    }
+   }
+}
+
 
 }
 
