@@ -26,14 +26,21 @@ const hero = () => {
       <div className="hero-wrapper container3">
         <div className="hero-info-container">
           <div className="hero-info">
+            <motion.div  initial={{ opacity: 0.3, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.8 }}>
             <BubbleText text="Making Every Assets Productive" />
+            </motion.div>
+          
 
-            <p className="secondary-heading02">
+            <motion.p  initial={{ opacity: 0.3, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.8 }} className="secondary-heading02">
               Multichain permissionless lending & borrowing protocol for ALL
               ERC20 tokens.
-            </p>
+            </motion.p>
             {/* <SpotlightButton className="trade-btn" text="Start Trading" /> */}
-            <button className="button2">Start Trading</button>
+            <motion.button className="button2">Start Trading</motion.button>
           </div>
         </div>
       <div className="bg-image"></div>
