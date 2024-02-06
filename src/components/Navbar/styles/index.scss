@@ -7,11 +7,13 @@
 }
 
 .primary-header {
-  padding-top: var(--size-300);
+
+  z-index: 9999;
 }
 .nav-wrapper {
   display: grid;
   grid-template-columns: 32% 68%;
+  padding-top: 1rem;
   img {
     height: 33px;
   }

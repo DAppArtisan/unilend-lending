@@ -144,12 +144,10 @@ $primaryText: #202f44;
   font-weight: $font-weight-extra-bold;
   font-size: clamp(2rem, 1.4741rem + 2.6295vw, 4.0625rem);
   line-height: $line-height-sm;
-   @include lessThan(md){
+   @include lessThan(lg){
     text-align: center;
    }
-   @include lessThan(sm){
-    text-align: center;
-   }
+   
 }
 .paragraph01 {
   color: $sub-heading;

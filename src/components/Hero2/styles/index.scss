@@ -1,6 +1,6 @@
 @import "../../../styles";
 .hero-wrapper {
-  height: 100dvh;
+  height: 950px;
   padding-top: 7rem;
   padding-bottom: 200px;
   @include lg{
@@ -70,7 +70,7 @@
   .hero-video {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     position: absolute;
     top: 0;
     left: 0;
