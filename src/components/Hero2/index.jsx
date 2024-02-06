@@ -6,8 +6,8 @@ import { Suspense } from "react";
 import Video from "./videoComponent";
 // import Videos from "../../../public/assets/Ip.mp4"
 import { motion } from "framer-motion";
-import VideoComponent from "./videoComponent";
-// import BubbleText from "./BubbleText/BubbleText";
+// import SpotlightButton from "../Section1/SpotlightButton/SpotlightButton";
+import BubbleText from "./BubbleText/BubbleText";
 const hero = () => {
   // const imageVariants = {
   //   hidden: { opacity: 0 },
@@ -63,11 +63,23 @@ const hero = () => {
     />
   </video> */}
   <div className="bg-image"></div>
- <VideoComponent/>
+  <video
+        className="jss330"
+      
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+      >
+        <source src="/assets/Lp.mp4" type="video/mp4" />
+        <source src="/assets/ip.ogg" type="video/ogg" />
+        <Image src="/assets/hero-unilend.png" alt="poster" width={100} height={100}/>
+      </video> 
     <div className="hero-info-container wrapper"> 
       <div className="hero-info">
-           {/* <BubbleText text="Making Every Assets Productive" /> */}
-           Making Every Assets Productive
+           <BubbleText text="Making Every Assets Productive" />
+
           <p className="secondary-heading02">
               Multichain permissionless lending & borrowing protocol for ALL
                ERC20 tokens.
