@@ -7,7 +7,7 @@ import Video from "./videoComponent";
 // import Videos from "../../../public/assets/Ip.mp4"
 import { motion } from "framer-motion";
 // import SpotlightButton from "../Section1/SpotlightButton/SpotlightButton";
-import BubbleText from "../hero2/bubbleText/bubbleText";
+import BubbleText from "./BubbleText/BubbleText";
 const hero = () => {
   // const imageVariants = {
   //   hidden: { opacity: 0 },

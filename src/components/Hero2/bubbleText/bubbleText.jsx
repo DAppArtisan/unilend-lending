@@ -1,5 +1,5 @@
 import "./styles/index.scss"
-const bubbleText = ({text}) => {
+const BubbleText = ({text}) => {
     return (
       <h1 className="heading04">
         {text.split("").map((child, idx) => (
@@ -11,4 +11,4 @@ const bubbleText = ({text}) => {
     );
   };
 
-export default bubbleText
+export default BubbleText
