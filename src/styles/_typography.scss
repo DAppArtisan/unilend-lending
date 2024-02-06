@@ -105,7 +105,7 @@ $primaryText: #202f44;
   font-weight: $font-weight-regular;
   font-size: clamp(1rem, 0.8788rem + 0.6061vw, 1.4375rem); 
   line-height: 2rem;
-  padding-top: $size-600;
+  padding-top: .5rem;
    @include lessThan(md){
     line-height:$line-height-base;
    }

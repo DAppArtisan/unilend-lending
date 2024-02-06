@@ -10,7 +10,7 @@ export default function Home() {
      <Section2/>
      <Features/>
      <Client/>
-     <Blog/>
+     {/* <Blog/> */}
      <Community/>
     </main>
   )
