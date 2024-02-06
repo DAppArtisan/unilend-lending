@@ -1,36 +1,73 @@
 @import "../../../styles";
-.hero-wrapper {
-  height: 950px;
-  padding-top: 7rem;
-  padding-bottom: 200px;
-  @include lg{
-    padding-top: 4rem;
-    padding-bottom: 35px;
-    height: 62vh;
-  }
 
-  @media (min-width:320px) and (max-width: 480px) {
-    height: 70vh;
+.jss329 {
+  overflow: hidden;
+  // background: #f2f5fa;
+  margin-top: -5rem;
+  @include lessThan(lg) {
+    margin-top: 21rem;
   }
- 
- 
+  .bg-image {
+      background-image: url(/_next/static/media/gr--red.f1a68d9e.svg);
+      background-repeat: no-repeat;
+      background-position: top right -10rem;
+      position: absolute;
+      top: -36%;
+      right: 0px;
+      width: 318px;
+      height: 355px;
+      z-index: 1;
+    @include lessThan(md) {
+      display: none;
+    }
+  }
+  .jss330 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    // position: absolute;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, #110f1b 10%);
+    mask-image: linear-gradient(to top, transparent 1%, #110f1b 30%);
+    @include lessThan(md) {
+      padding-top: 5rem;
+    }
 
+  
+  }
   .hero-info-container {
     width: 100%;
+    max-width: 1605px;
+    @include lessThan(lg) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .hero-info {
-      position: relative;
+      position: absolute;
       z-index: 999;
       display: flex;
       width: 576px;
       flex-direction: column;
       -webkit-box-align: start;
       align-items: flex-start;
-      @include xl {
-        align-items: center;
-        width: 100%;
-        text-align: center;
+
+      top: 10rem;
+      @media (max-width: 1700px) {
+        margin-left: 70px;
       }
-      
+      @include lessThan(lg) {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      @include lessThan(sm) {
+        width: 100%;
+        margin-left: 0px;
+      }
+
       .button-outer {
         @include lessThan(md) {
           margin-inline: auto;
@@ -41,89 +78,70 @@
       }
       button {
         margin-top: var(--size-500) !important;
-       @include lessThan(lg){
-        margin-top:1rem !important;
-       }
+        @include lessThan(lg) {
+          margin-top: 1rem !important;
+        }
       }
     }
   }
-}
-
-.bg-image {
-  background-image: url("../../../../public/assets/gr--red.svg");
-  background-repeat: no-repeat;
-  background-position: top right -14rem;
-  position: absolute;
-  top: -22%;
-  right: 0;
-  width: 318px;
-  height: 355px;
-  @include lessThan(md) {
-    display: none;
+  .MuiContainer-maxWidthLg-395.MuiContainer-maxWidthLg-395 {
+    max-width: 1620px;
   }
-}
-.bg-1 {
-  background-position: top center;
-}
-.hero-section {
 
-  .hero-video {
-    object-fit: cover;
-    width: 100%;
-    // height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    -webkit-mask-image: linear-gradient(to top, transparent 1%, #110f1b 10%);
-    mask-image: linear-gradient(to top, transparent 1%, #110f1b 30%);
-    @include xl{
-      object-fit: contain;
-     padding-top: 2rem;
-     position: relative;
+  .MuiContainer-root-389.MuiContainer-root-389 {
+    padding: 0px 160px;
+    max-width: 1620px;
+    box-sizing: border-box;
+  }
+
+  .jss331 {
+    z-index: 2;
+    position: relative;
+    // max-width: 1240px;
+    text-align: left;
+    .jss332 {
+      margin: 0 auto;
+      max-width: 900px;
+      text-align: center;
+      .jss333 {
+        font-size: 73px;
+        text-align: center;
+        line-height: 78px;
+        letter-spacing: -0.02em;
+      }
+
+      .MuiTypography-h1-404 {
+        color: #1f2226;
+        font-size: 72px;
+        font-family: "TT-Firs-Neue-Demi-Bold", sans-serif;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      .MuiTypography-root-399 {
+        margin: 0;
+      }
     }
-   
-  }
-  .fallbackImage {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-  }
-}
-.banner {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  // gap: 1rem;
-  justify-content: space-between;
-  margin: auto;
-  height: auto;
-  overflow: hidden;
-  // background: url("../../../../public/assets/hero-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  .banner-sub {
-    height: 300px;
-    width: 100%;
-  }
-  .hero-container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 2500px;
-  }
-  img {
-    @include lessThan(sm) {
-      width: 350px;
-      height: auto;
+
+    .MuiTypography-h1-404 {
+      color: #1f2226;
+      font-size: 72px;
+      font-family: "TT-Firs-Neue-Demi-Bold", sans-serif;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .MuiTypography-root-399 {
+      margin: 0;
+    }
+    .jss335 {
+      color: #2e343c;
+      font-size: 16px;
+      font-family: Inter;
+      font-weight: 400;
+      line-height: 24px;
     }
   }
 }

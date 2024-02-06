@@ -62,6 +62,7 @@ const hero = () => {
       type="video/mp4"
     />
   </video> */}
+  <div className="bg-image"></div>
   <video
         className="jss330"
       

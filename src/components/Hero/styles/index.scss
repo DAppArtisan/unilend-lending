@@ -22,6 +22,19 @@
   padding-top: 5rem;
 }
 
+.bg-image {
+  background-image: url("../../../../public/assets/gr--red.svg");
+  background-repeat: no-repeat;
+  background-position: top right -14rem;
+  position: absolute;
+  top: -22%;
+  right: 0;
+  width: 318px;
+  height: 355px;
+  @include lessThan(md) {
+    display: none;
+  }
+}
   }
   .hero-info-container {
     width: 100%;
