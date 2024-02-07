@@ -18,7 +18,7 @@ const index = () => {
     <section className="padding-block-900 community-main">
       <div className="container2">
         <div className="even-block">
-          <div className="flow">
+          <div className="">
             <motion.div
               initial={{ opacity: 0.5, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}

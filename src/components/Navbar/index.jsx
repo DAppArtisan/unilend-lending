@@ -56,8 +56,9 @@ const Navbar = () => {
               <li>
                 <a href="#">Brand Kit</a>
               </li>
+              
             </motion.ul>
-            <Link href="#">
+            <Link href="https://v1.unilend.finance" target="_blank">
               <motion.button
                 variants={textVariants}
                 initial="initial"
@@ -67,7 +68,7 @@ const Navbar = () => {
                 V1 App
               </motion.button>
             </Link>
-            <Link href="#">
+            <Link href="https://testnet.unilend.finance" target="_blank">
               <motion.button
                 variants={textVariants}
                 initial="initial"

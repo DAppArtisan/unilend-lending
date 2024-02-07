@@ -19,7 +19,7 @@ const Features = () => {
         <motion.div
           initial={{ opacity: 0.5, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
+          transition={{ ease: "easeInOut", duration: 0.5 }}
           className="info-container"
         >
           <h2 className="heading01">Our Features</h2>
@@ -39,7 +39,7 @@ const Features = () => {
               <motion.div className="feat-img"  whileHover={{ y: -20 }}
                   transition={{
                     ease: "easeInOut",
-                    duration: .8,
+                    duration: .5,
                   }}>
                 <Image alt="" className="image-icon" src={Image1} />
               </motion.div>
@@ -52,7 +52,7 @@ const Features = () => {
               <motion.div className="feat-img"  whileHover={{ y: -20 }}
                   transition={{
                     ease: "easeInOut",
-                    duration: .8,
+                    duration: .5,
                   }}>
                 <Image
                   alt="Dual asset pool"
@@ -61,7 +61,7 @@ const Features = () => {
                   src={Image2}
                 />
               </motion.div>
-              <h3 className="f-text">Dual asset pool</h3>
+              <h3 className="f-text">Dual Asset Pool</h3>
             </div>
             <div className="content-container">
               <div className="bg-bx">
@@ -70,7 +70,7 @@ const Features = () => {
               <motion.div className="feat-img"  whileHover={{ y: -20 }}
                   transition={{
                     ease: "easeInOut",
-                    duration: .8,
+                    duration: .5,
                   }}>
                 <Image
                   alt="Flexible pricing"
@@ -79,7 +79,7 @@ const Features = () => {
                   src={Image3}
                 />
               </motion.div>
-              <h3 className="f-text">Flexible pricing</h3>
+              <h3 className="f-text">Flexible Pricing</h3>
             </div>
             <div className="content-container">
               <div className="bg-bx">
@@ -88,7 +88,7 @@ const Features = () => {
               <motion.div className="feat-img"  whileHover={{ y: -20 }}
                   transition={{
                     ease: "easeInOut",
-                    duration: .8,
+                    duration: .5,
                   }}>
                 <Image
                   alt="Governance"
@@ -106,7 +106,7 @@ const Features = () => {
               <motion.div className="feat-img"  whileHover={{ y: -20 }}
                   transition={{
                     ease: "easeInOut",
-                    duration: .8,
+                    duration: .5,
                   }}>
                 <Image
                   alt="Nft"
@@ -115,7 +115,7 @@ const Features = () => {
                   src={Image5}
                 />
               </motion.div>
-              <h3 className="f-text">Nft</h3>
+              <h3 className="f-text">NFT</h3>
             </div>
             <div className="content-container">
               <div className="bg-bx">
@@ -124,7 +124,7 @@ const Features = () => {
               <motion.div className="feat-img"  whileHover={{ y: -20 }}
                   transition={{
                     ease: "easeInOut",
-                    duration: .8,
+                    duration: .5,
                   }}>
                 <Image
                   alt="Permissionless listing"
@@ -133,7 +133,7 @@ const Features = () => {
                   src={Image6}
                 />
               </motion.div>
-              <h3 className="f-text">Permissionless listing</h3>
+              <h3 className="f-text">Permissionless Listing</h3>
             </div>
           </div>
         </div>

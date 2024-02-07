@@ -2,24 +2,18 @@
 .section2 {
   position: relative;
  
-  .col1 {
-    order: 2;
+  @include lessThan(xl){
+    .col2{
+      order: -1;
+    }
   }
-  .col2 {
-    order: 1;
-  }
+ 
 
   @media (min-width: 50em) {
     .even-colums {
-      grid-auto-flow: column;
       grid-auto-columns: 1fr;
     }
-    .col1 {
-      order: 1; /* Change order for larger screens */
-    }
-    .col2 {
-      order: 2; /* Change order for larger screens */
-    }
+  
   }
 
   position: relative;
@@ -33,11 +27,12 @@
       }
     }
   }
-  .mainImage{
-    
-    width: clamp(30rem, 32.6699rem + -11.3916vw, 19rem);
-    height: clamp(30rem, 32.6699rem + -11.3916vw, 19rem);
-  }
+
+    .mainImage {
+      width: 462px;
+      aspect-ratio: 0.0.832432;
+      height: auto;
+    }
   .gradient {
     &:before {
       content: "";

@@ -1,7 +1,5 @@
 @import "../../../styles";
-.flow {
-  padding-top: 8rem;
-}
+
 .community-main {
   position: relative;
   background: $gradient;
@@ -19,6 +17,11 @@
     padding: 20px;
     background: #4b2eff;
     border-radius: 50%;
+    @include lessThan(md){
+      padding: 15px;
+    }
+  
+   
     img {
       width: 28px;
       height: 28px;
@@ -27,7 +30,9 @@
 
   .boxx {
     position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .pulse {
       border-radius: 50%;
       background: $primary;
@@ -69,7 +74,7 @@
     .icons_bx {
       display: flex;
       gap: 4rem;
-      padding: 3rem;
+  
       justify-content: center;
       align-items: center;
       @include lessThan(sm) {
@@ -88,10 +93,7 @@
     }
     .logo-circle {
       position: absolute;
-      top: 29%;
-      left: 39%;
       z-index: 99999;
-
       width: 269px;
       height: 269px;
       border-radius: 189px;
@@ -107,27 +109,25 @@
       justify-content: center;
       align-items: center;
       @include lessThan(lg){
-        width: 200px;
-        height: 200px;
+       display: none;
       }
 
 
       .logo-img {
-        height: 6.25rem;
+     
         width: 6.25rem;
-        @include lessThan(md) {
-          width: 3rem;
-          height: 3rem;
-        }
-        @include lessThan(lg) {
-          width: 4rem;
-          height: 5rem;
-        }
+        aspect-ratio: 16/9;
+       
+        // @include lessThan(md) {
+        //   width: 3rem;
+        //   height: 3rem;
+        // }
+        // @include lessThan(lg) {
+        //   width: 4rem;
+        //   height: 5rem;
+        // }
       }
-      @include lessThan(sm) {
-        width: 7rem;
-        height: 7rem;
-      }
+     
     }
   }
 }

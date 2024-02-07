@@ -263,17 +263,23 @@ ol[role="list"] {
 
 .container{
   --max-width:1315px;
-  --padding:1rem;
+  --padding:4.2rem;
   width:min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
+  @media screen and (max-width:800px) {
+    --padding:1rem;
+   }
 }
 
 
 .container2{
   --max-width:1475px;
-  --padding:1rem;
+  --padding:4rem;
   width:min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
+  @media screen and (max-width:800px) {
+    --padding:1rem;
+   }
 
 }
 .container3{
@@ -299,32 +305,9 @@ ol[role="list"] {
  align-items: center;
  
 }
-/* .even-colums{
-  display:grid;
-  gap:10rem;
-  place-items: center;
-}
-.col1 {
-  order: 2; 
-}
-.col2 {
-  order: 1; 
-} */
 
-/* @media (min-width :50em){
-  .even-colums{
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-  .col1 {
-    order: 1; 
-  }
-  .col2 {
-    order: 2;
-  }
-} */
 
-@media (min-width :50em){
+@media (min-width :1024px){
    .even-block{
     grid-auto-flow: column;
     grid-auto-columns: 2fr 3fr;
@@ -334,6 +317,7 @@ ol[role="list"] {
 .even-block{
   display:grid;
   gap:2rem;
+  place-items: center;
 }
 
 .absolute{

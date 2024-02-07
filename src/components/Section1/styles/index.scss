@@ -1,7 +1,6 @@
 @import "../../../styles";
 .section1 {
   position: relative;
- 
 
   .in-bx {
     padding-top: $size-500;
@@ -25,9 +24,10 @@
     }
   }
 
-  .mainImage{
-    width: clamp(30rem, 32.6699rem + -11.3916vw, 19rem);
-    height: clamp(30rem, 32.6699rem + -11.3916vw, 19rem);
+  .mainImage {
+    width: 446px;
+    aspect-ratio: 0.95913978;
+    height: auto;
   }
 
   .gradient {
@@ -42,14 +42,12 @@
       background-repeat: no-repeat;
       background-image: url("../../../../public/assets//red.svg");
       //  border: 1px solid #fff;
-      @include lessThan(xl){
+      @include lessThan(xl) {
         width: 499px;
       }
-    @include lessThan(sm){
-      display: none;
-    }
-      
- 
+      @include lessThan(sm) {
+        display: none;
+      }
     }
   }
 }

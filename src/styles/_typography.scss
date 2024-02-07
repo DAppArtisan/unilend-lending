@@ -203,6 +203,10 @@ $primaryText: #202f44;
     scale: 1;
     border: 1px solid $border-button-hover;
   }
+  @include lessThan(xl){
+    width: 5.5rem;
+    height: 2.2rem;
+  }
   @include lessThan(sm) {
     height: 2rem;
     width:5rem;
@@ -243,6 +247,10 @@ $primaryText: #202f44;
     background: $border-button-hover;
     scale: 1;
     border: 1px solid $border-button-hover;
+  }
+  @include lessThan(xl){
+    width: 10rem;
+    height: 3.5rem;
   }
   @include lessThan(sm) {
     height: var(--size-200);

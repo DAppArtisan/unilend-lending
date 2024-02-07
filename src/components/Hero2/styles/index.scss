@@ -1,11 +1,43 @@
 @import "../../../styles";
+.bold {
+  transition:
+    0.35s font-weight,
+    0.35s color;
+}
 
+.bold:hover {
+  font-weight: 900;
+  color: $primary;
+}
+
+/* To the right */
+.bold:hover + .bold {
+  font-weight: 700;
+  color: rgb(199, 210, 254);
+}
+
+.bold:hover + .bold + .bold {
+  font-weight: 300;
+}
+
+/* To the left */
+.bold:has(+ .bold:hover) {
+  font-weight: 700;
+  color: rgb(199, 210, 254);
+}
+
+.bold:has(+ .bold + .bold:hover) {
+  font-weight: 300;
+}
 .jss329 {
   overflow: hidden;
   // background: #f2f5fa;
   margin-top: -5rem;
   @include lessThan(lg) {
     margin-top: 21rem;
+  }
+  @include lessThan(xl) {
+    margin-top: 25rem;
   }
   .bg-image {
       background-image: url("../../../../public//assets/gr--red.svg");
@@ -53,15 +85,16 @@
       flex-direction: column;
       -webkit-box-align: start;
       align-items: flex-start;
-
       top: 10rem;
       @media (max-width: 1700px) {
         margin-left: 70px;
       }
+     
       @include lessThan(lg) {
         text-align: center;
         justify-content: center;
         align-items: center;
+        margin-left: 0;
       }
       @include lessThan(sm) {
         width: 100%;
@@ -89,7 +122,6 @@
   .jss331 {
     z-index: 2;
     position: relative;
-    // max-width: 1240px;
     text-align: left;
     .jss332 {
       margin: 0 auto;

@@ -37,6 +37,21 @@
     }
     .feat-img {
       z-index: 999;
+      @include lessThan(xl){
+        width: 230px;
+        height: 230px;
+      }
+      @include lessThan(lg){
+        width: 200px;
+      }
+      @include lessThan(md){
+        width: 160px;
+      
+      }
+      @include lessThan(sm){
+        width: 140px;
+      
+      }
     }
 
     .f-text {
