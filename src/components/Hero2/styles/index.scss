@@ -13,7 +13,7 @@
 /* To the right */
 .bold:hover + .bold {
   font-weight: 700;
-  color: rgb(199, 210, 254);
+  color: rgb(140, 159, 236);
 }
 
 .bold:hover + .bold + .bold {
@@ -23,7 +23,7 @@
 /* To the left */
 .bold:has(+ .bold:hover) {
   font-weight: 700;
-  color: rgb(199, 210, 254);
+  color: rgb(140, 159, 236);
 }
 
 .bold:has(+ .bold + .bold:hover) {
@@ -31,7 +31,6 @@
 }
 .jss329 {
   overflow: hidden;
-  // background: #f2f5fa;
   margin-top: -5rem;
   @include lessThan(lg) {
     margin-top: 23rem;
