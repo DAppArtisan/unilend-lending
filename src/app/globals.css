@@ -348,13 +348,8 @@ a{
 }
 
 /* media querry  */
-@media screen and (max-width:399px) {
+@media screen and (max-width:799px) {
   .padding-block-900{
     padding-block:2rem;
-  }
- }
- @media screen and (max-width:799) {
-  .padding-block-900{
-    padding-block:4rem;
   }
  }
