@@ -30,7 +30,7 @@ const Features = () => {
           </p>
         </motion.div>
 
-        <div className="content padding-block-200">
+        <div className="content padding-block-800">
           <div className="feature_bx">
             <div className="content-container">
               <div className="bg-bx">

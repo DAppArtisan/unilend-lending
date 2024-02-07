@@ -32,7 +32,7 @@ $primaryText: #202f44;
   src: url("../fonts/general/GeneralSans-Medium.otf") format("opentype");
   ascent-override: 90%;
   vertical-align: text-bottom;
-} 
+}
 @font-face {
   font-family: "Sans Serif Semi Bold";
   font-weight: bold;
@@ -41,7 +41,7 @@ $primaryText: #202f44;
   src: url("../fonts/general/GeneralSans-Semibold.otf") format("opentype");
   ascent-override: 90%;
   vertical-align: text-bottom;
-} 
+}
 
 .heading01 {
   color: $white;
@@ -51,17 +51,17 @@ $primaryText: #202f44;
   margin: unset;
   font-style: normal;
   font-weight: $font-weight-extra-bold;
-  font-size: clamp(1.625rem, 1.244rem + 1.9048vw, 3rem);// 48px
+  font-size: clamp(1.625rem, 1.244rem + 1.9048vw, 3rem); // 48px
   // line-height: $font-size-lg-6 * $line-height-sm;
   line-height: $line-height-sm;
   &.mobile {
     font-weight: $font-weight-extra-bold;
-  font-size:$font-size-lg-3; // 36px
+    font-size: $font-size-lg-3; // 36px
     // line-height: $font-size-lg-3 * $line-height-sm;
     line-height: $line-height-sm;
   }
 }
-.secondary-heading01{
+.secondary-heading01 {
   letter-spacing: unset;
   margin: unset;
   font-style: normal;
@@ -71,12 +71,12 @@ $primaryText: #202f44;
   font-size: clamp(1rem, 0.8788rem + 0.6061vw, 1.4375rem); //22px
   line-height: $line-height-sm;
   padding-top: $size-600;
-  @include lessThan(md){
+  @include lessThan(md) {
     line-height: $line-height-base;
   }
 }
 
-.heading02{
+.heading02 {
   color: $white;
   font-family: "Sans Serif Medium";
   margin: unset;
@@ -89,12 +89,11 @@ $primaryText: #202f44;
   // line-height: 4.375rem;
   &.mobile {
     font-weight: $font-weight-extra-bold;
-  font-size:$font-size-lg-3; // 36px
+    font-size: $font-size-lg-3; // 36px
     // line-height: $font-size-lg-3 * $line-height-sm;
     line-height: $line-height-sm;
   }
 }
-
 
 .secondary-heading02 {
   letter-spacing: unset;
@@ -103,18 +102,18 @@ $primaryText: #202f44;
   font-family: "Sans Serif Regular";
   color: $sub-heading;
   font-weight: $font-weight-regular;
-  font-size: clamp(1rem, 0.8788rem + 0.6061vw, 1.4375rem); 
+  font-size: clamp(1rem, 0.8788rem + 0.6061vw, 1.4375rem);
   line-height: 2rem;
-  padding-top: .5rem;
-   @include lessThan(md){
-    line-height:$line-height-base;
-   }
-   @include lessThan(sm){
-   padding-top: var(--size-200);
-   }
+  padding-top: 0.5rem;
+  @include lessThan(md) {
+    line-height: $line-height-base;
+  }
+  @include lessThan(sm) {
+    padding: var(--size-200);
+  }
 }
 
-.heading03{
+.heading03 {
   color: $white;
   font-family: "Sans Serif Medium";
   margin: unset;
@@ -127,12 +126,11 @@ $primaryText: #202f44;
 
   &.mobile {
     font-weight: $font-weight-extra-bold;
-  font-size:$font-size-lg-3; // 36px
+    font-size: $font-size-lg-3; // 36px
     // line-height: $font-size-lg-3 * $line-height-sm;
     line-height: $line-height-sm;
   }
 }
-
 
 .heading04 {
   color: $white;
@@ -144,10 +142,9 @@ $primaryText: #202f44;
   font-weight: $font-weight-extra-bold;
   font-size: clamp(2rem, 1.4741rem + 2.6295vw, 4.0625rem);
   line-height: $line-height-sm;
-   @include lessThan(lg){
+  @include lessThan(lg) {
     text-align: center;
-   }
-   
+  }
 }
 .paragraph01 {
   color: $sub-heading;
@@ -157,13 +154,13 @@ $primaryText: #202f44;
   font-family: "Sans Serif Regular";
   font-style: normal;
   font-weight: $font-weight-regular; //400
-  font-size: clamp(0.75rem, 0.6807rem + 0.3463vw, 1rem); 
+  font-size: clamp(0.75rem, 0.6807rem + 0.3463vw, 1rem);
   // line-height: $font-size-lg * $line-height-sm;
   line-height: 25px;
   padding-left: 1rem;
-  @include lessThan(md){
-    line-height:1.6rem;
-   }
+  @include lessThan(md) {
+    line-height: 1.6rem;
+  }
 }
 
 .paragraph02 {
@@ -177,14 +174,13 @@ $primaryText: #202f44;
   font-size: clamp(0.75rem, 0.6807rem + 0.3463vw, 1rem); // 16px
   // line-height: $font-size-lg * $line-height-sm;
   line-height: 21px;
-  
+
   &.mobile {
-     font-size:$font-size-xsm; //12px
+    font-size: $font-size-xsm; //12px
   }
 }
 
-
-.button{
+.button {
   display: flex;
   font-family: "Sans Serif Medium";
   width: 9.5rem;
@@ -195,73 +191,63 @@ $primaryText: #202f44;
   border-radius: 100px;
   background-color: $primary;
   border: 1px solid $primary;
-  color:$white;
+  color: $white;
   font-size: clamp(0.625rem, 0.534rem + 0.3883vw, 1rem);
-  transition: opacity .3s,background-color .3s;
   &:hover {
     background-color: $border-button-hover;
     scale: 1;
     border: 1px solid $border-button-hover;
   }
-  @include lessThan(xl){
-    width: 5.5rem;
-    height: 2.2rem;
-  }
-  @include lessThan(sm) {
-    height: 2rem;
-    width:5rem;
-   
-    }
-    @include lessThan(md) {
-      height: 2rem;
-      width:4rem;
-      
-      }
-      @include lessThan(lg) {
-        height: 2rem;
-        width:5rem;
-        }
-        @include lessThan(xs)
-        {
-          height: 1.8rem;
-          width:3.4rem;
-             
-        }
 
+
+  @include lessThan(md) {
+    height: 1.5rem ;
+    width: 3.5rem ;
+  }
+  // @include lessThan(md) {
+  //   height: 2rem ;
+  //   width: 4rem ;
+  // }
+
+  @include moreThan(md) {
+    height: 2rem;
+    width: 6rem;
+  }
+  @include moreThan(xl){
+    width: 9.5rem;
+  height: 2.5rem;
+  }
 }
 
-
-.button2{
+.button2 {
   display: flex;
   width: 210px;
-  height:60px;
+  height: 60px;
   padding: 0px;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  background: linear-gradient(to bottom right, #6E3EFF, #4526FF);
+  background: linear-gradient(to bottom right, #6e3eff, #4526ff);
   border: 1px solid $primary;
-  color:$white;
+  color: $white;
   font-size: clamp(0.625rem, 0.534rem + 0.3883vw, 1rem);
   &:hover {
     background: $border-button-hover;
     scale: 1;
     border: 1px solid $border-button-hover;
   }
-  @include lessThan(xl){
+  @include lessThan(xl) {
     width: 10rem;
     height: 3.5rem;
   }
   @include lessThan(sm) {
     height: var(--size-200);
-    width:5rem;
+    width: 5rem;
     font-size: $font-size-xsm;
-    }
-    @include lessThan(md) {
-      height: 2.5rem;
-      width:6rem;
-      font-size: $font-size-xxsm;
-      }
-    
-
+  }
+  @include lessThan(md) {
+    height: 2.5rem;
+    width: 6rem;
+    font-size: $font-size-xxsm;
+  }
 }

@@ -7,12 +7,12 @@
   @include lessThan(sm) {
     transform: none;
   }
-.social{
-  margin-left: 1px;
-  @include lessThan(md){
-    margin-left: 10px;
+  .social {
+    margin-left: 1px;
+    @include lessThan(md) {
+      margin-left: 10px;
+    }
   }
-}
   .shift-l {
     margin-left: -9px;
     z-index: 999;
@@ -22,13 +22,13 @@
     padding: 20px;
     background: #4b2eff;
     border-radius: 50%;
-  
-  @include lessThan(xl){
-    padding:13px;
-  }
-  @include lessThan(lg){
-    padding:15px;
-  }
+
+    @include lessThan(xl) {
+      padding: 13px;
+    }
+    @include lessThan(lg) {
+      padding: 15px;
+    }
     img {
       width: 28px;
       height: 28px;
@@ -89,11 +89,10 @@
         justify-content: center;
         align-items: center;
       }
-      img{
-       @include lessThan(xl){
-        height: auto;
-       }
-               
+      img {
+        @include lessThan(xl) {
+          height: auto;
+        }
       }
     }
     .logo-circle {
@@ -113,30 +112,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
-     @include lessThan(xl){
-      width:150px;
-      height: 150px;
-     }
-      @include lessThan(lg){
-       display: none;
+      @include lessThan(xl) {
+        width: 150px;
+        height: 150px;
       }
-
+      @include lessThan(lg) {
+        display: none;
+      }
 
       .logo-img {
-     
-        width: 6.25rem;
-        aspect-ratio: 16/9;
-       
-        // @include lessThan(md) {
-        //   width: 3rem;
-        //   height: 3rem;
-        // }
-        // @include lessThan(lg) {
-        //   width: 4rem;
-        //   height: 5rem;
-        // }
+        width: 110px;
+        height: auto;
+
+        @include lessThan(xl) {
+          width: 3.5rem;
+        }
       }
-     
     }
   }
 }

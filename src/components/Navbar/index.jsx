@@ -31,7 +31,7 @@ const Navbar = () => {
             animate="animate"
           >
             <Link href="#">
-              <Image src={Logo} width="auto" height="auto" alt="Logo" />
+              <Image className="logo" src={Logo} width="auto" height="auto" alt="Logo" />
             </Link>
           </motion.span>
 

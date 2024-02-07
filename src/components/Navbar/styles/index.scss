@@ -1,9 +1,12 @@
 @import "../../../styles";
 .wrapper {
-  --max-width: 1700px;
+  --max-width: 1600px;
   --padding: 1rem;
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
+  @include moreThan(lg){
+    --padding:4.2rem;
+  }
 }
 
 .primary-header {
@@ -14,8 +17,16 @@
   display: grid;
   grid-template-columns: 4fr 5fr;
   padding-top: 1rem;
-  img {
-    height: 33px;
+  @include lessThan(xl){
+    grid-template-columns: 3fr 5fr;
+  }
+  .logo{
+    @include lessThan(lg){
+      width: 164px;
+    }
+    @include lessThan(xl){
+      width: 200px;
+    }
   }
 }
 .primary-navigation {
@@ -23,6 +34,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   z-index: 9999;
+  align-items: center;
   li {
     a {
       color: $white;
@@ -51,8 +63,6 @@
   }
 
 
-/* styles/DropdownMenu.module.css */
-
 .dropdownContainer {
   position: relative;
   .side_bx{
@@ -65,8 +75,8 @@
       align-items: center;
       justify-content: center;
       img{
-       width: 25px;
-       height: 30px;
+       width: 30px;
+       aspect-ratio:0.899;
       }
      }
   }
@@ -101,10 +111,13 @@
 
 .nav-list {
   display: flex;
-  gap: clamp(1rem, 4vw, 4rem);
+  gap: clamp(1rem, 3vw, 4rem);
   font-weight: $font-weight-regular;
   justify-content: center;
   align-items: center;
+  @include lessThan(xl){
+    gap: 1rem;
+  }
 }
 
 .header {

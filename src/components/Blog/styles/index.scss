@@ -15,53 +15,60 @@
   background-position: left 3rem, right 3rem;
   background-repeat: no-repeat;
 }
+.innerclass{
 
+
+}
 .containerProps {
   width: 100% !important ;
   justify-content: space-between;
   flex-flow: nowrap !important;
-}
-.forwardBtnProps {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  align-self: center;
-  background-color: $black;
-  border: 2px solid $voilet;
-  border-radius: 50%;
-  color: $voilet;
-  cursor: pointer;
-  &:disabled {
-    cursor: not-allowed;
+  .forwardBtnProps {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    background-color: $black;
+    border: 2px solid $voilet;
+    border-radius: 50%;
+    color: $voilet;
+    cursor: pointer;
+    &:disabled {
+      cursor: not-allowed;
+    }
+    @include lessThan(xl){
+      margin-left: 10px;
+    }
   }
-}
-.backwardBtnProps {
-  width: 30px;
-  height: 30px;
-  align-self: center;
-  background-color: $black;
-  border: 2px solid $voilet;
-  border-radius: 50%;
-  color: $voilet;
-  cursor: pointer;
-  &:disabled {
-    cursor: not-allowed;
+  .backwardBtnProps {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    background-color: $black;
+    border: 2px solid $voilet;
+    border-radius: 50%;
+    color: $voilet;
+    cursor: pointer;
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
-}
-.forwardBtnProps,
-.backwardBtnProps {
-  svg {
-    position: absolute;
-  }
-  @include lessThan(sm) {
-    width: 28px;
-    height: 28px;
+  .forwardBtnProps,
+  .backwardBtnProps {
     svg {
-      width: 20px;
-      height: 20px;
+      position: absolute;
+    }
+    @include lessThan(sm) {
+      width: 28px;
+      height: 28px;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
+
 .heading {
   font-size: var(--fs-900);
   font-weight: $font-weight-bold;
