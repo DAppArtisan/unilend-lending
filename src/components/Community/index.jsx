@@ -66,7 +66,7 @@ const index = () => {
               <Image className="logo-img" src={LogoBox} alt="logo Image" />
             </div>
             <div className="icons_bx">
-              <Image src={Mixicon} alt="mix icons" />
+              <Image src={Mixicon} className="mix-icon" alt="mix icons" />
             </div>
           </div>
         </div>

@@ -34,10 +34,13 @@
   // background: #f2f5fa;
   margin-top: -5rem;
   @include lessThan(lg) {
-    margin-top: 21rem;
+    margin-top: 23rem;
   }
   @include lessThan(xl) {
-    margin-top: 25rem;
+    margin-top: 27rem;
+  }
+  @include lessThan(md) {
+    margin-top: 17rem;
   }
   .bg-image {
       background-image: url("../../../../public//assets/gr--red.svg");
