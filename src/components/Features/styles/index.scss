@@ -1,25 +1,23 @@
 @import "../../../styles";
 .info-container {
   text-align: center;
- 
 }
 
-.content{
+.content {
   display: block;
-  @include lessThan(sm){
+  @include lessThan(sm) {
     display: none;
   }
- 
 }
-
 
 .feature_bx {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
-place-items: center;
-@include lessThan(xxl){
-  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-}
+  place-items: center;
+  gap: 2rem;
+  @include lessThan(xxl) {
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  }
   .content-container {
     position: relative;
     display: flex;
@@ -40,12 +38,11 @@ place-items: center;
     .feat-img {
       z-index: 999;
     }
-    
-    .f-text{
+
+    .f-text {
       font-size: clamp(0.75rem, 0.659rem + 0.3883vw, 1.125rem);
     }
   }
-
 
   .box1 {
     background-image: url("../../../../public/assets/icon1-bg.svg");
@@ -68,12 +65,11 @@ place-items: center;
   }
 }
 
-.slider{
+.slider {
   display: none;
-  @include lessThan(sm){
+  @include lessThan(sm) {
     display: block;
   }
-
 }
 
 .containerProps {
@@ -123,77 +119,72 @@ place-items: center;
   }
 }
 
-  .carousal-bxx{
-    
-    .icon-back {
-      background-position:center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-block: 1rem;
-    }
-  
-    .box1 {
-      background-image: url("../../../../public/assets/icon1-bg.svg");
-     
-    }
-    .box2 {
-      background-image: url("../../../../public/assets/icon2-bg.svg");
-    }
-    .box3 {
-      background-image: url("../../../../public/assets/icon3-bg.svg");
-    }
-    .box4 {
-      background-image: url("../../../../public/assets/icon1-bg.svg");
-    }
-    .box5 {
-      background-image: url("../../../../public/assets/icon2-bg.svg");
-    }
-    .box6 {
-      background-image: url("../../../../public/assets/icon1-bg.svg");
-    }
+.carousal-bxx {
+  .icon-back {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 1rem;
+  }
 
-    .feature_slider {
-      // width:300px;
-      // height: 250px;
-      cursor: pointer;
+  .box1 {
+    background-image: url("../../../../public/assets/icon1-bg.svg");
+  }
+  .box2 {
+    background-image: url("../../../../public/assets/icon2-bg.svg");
+  }
+  .box3 {
+    background-image: url("../../../../public/assets/icon3-bg.svg");
+  }
+  .box4 {
+    background-image: url("../../../../public/assets/icon1-bg.svg");
+  }
+  .box5 {
+    background-image: url("../../../../public/assets/icon2-bg.svg");
+  }
+  .box6 {
+    background-image: url("../../../../public/assets/icon1-bg.svg");
+  }
+
+  .feature_slider {
+    // width:300px;
+    // height: 250px;
+    cursor: pointer;
+    @include lessThan(sm) {
+      width: calc(100vw - 120px);
+    }
+    img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       @include lessThan(sm) {
-        width: calc(100vw - 120px);
+        width: 100%;
       }
-      img {
-    
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        @include lessThan(sm) {
-          width: 100%;
-        }
-      }
-      .bx_outer {
-        height: 200px;
-        padding: 15px;
-        border-radius: 0px 0px 24px 24px;
-        border: 1px solid $primary;
-        .bx_inn {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          p {
-            font-size: $font-size-xsm;
-            color: $voilet;
-            font-weight: $font-weight-semi-bold;
-            font-style: normal;
-            margin-bottom: 15px; 
-          }
-        }
-        h4 {
-          font-size: $font-size-sm;
-          font-weight: $font-weight-semi-bold;
-          line-height: 19.2px;
-        }
+    }
+    .bx_outer {
+      height: 200px;
+      padding: 15px;
+      border-radius: 0px 0px 24px 24px;
+      border: 1px solid $primary;
+      .bx_inn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         p {
-          font-size: 9px;
+          font-size: $font-size-xsm;
+          color: $voilet;
+          font-weight: $font-weight-semi-bold;
+          font-style: normal;
+          margin-bottom: 15px;
         }
+      }
+      h4 {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-semi-bold;
+        line-height: 19.2px;
+      }
+      p {
+        font-size: 9px;
       }
     }
   }
-
-
+}

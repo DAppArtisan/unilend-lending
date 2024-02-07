@@ -42,6 +42,9 @@
       background-repeat: no-repeat;
       background-image: url("../../../../public/assets//red.svg");
       //  border: 1px solid #fff;
+      @include lessThan(xl){
+        width: 499px;
+      }
     @include lessThan(sm){
       display: none;
     }

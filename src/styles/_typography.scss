@@ -217,6 +217,12 @@ $primaryText: #202f44;
         height: 2rem;
         width:5rem;
         }
+        @include lessThan(xs)
+        {
+          height: 1.8rem;
+          width:3.4rem;
+             
+        }
 
 }
 

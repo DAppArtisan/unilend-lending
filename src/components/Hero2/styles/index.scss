@@ -10,9 +10,9 @@
   .bg-image {
       background-image: url("../../../../public//assets/gr--red.svg");
       background-repeat: no-repeat;
-      background-position: top right -10rem;
+      background-position: top -12rem right -10rem;
       position: absolute;
-      top: -36%;
+      top: 0%;
       right: 0px;
       width: 318px;
       height: 355px;
@@ -84,15 +84,7 @@
       }
     }
   }
-  .MuiContainer-maxWidthLg-395.MuiContainer-maxWidthLg-395 {
-    max-width: 1620px;
-  }
 
-  .MuiContainer-root-389.MuiContainer-root-389 {
-    padding: 0px 160px;
-    max-width: 1620px;
-    box-sizing: border-box;
-  }
 
   .jss331 {
     z-index: 2;
@@ -113,7 +105,6 @@
       .MuiTypography-h1-404 {
         color: #1f2226;
         font-size: 72px;
-        font-family: "TT-Firs-Neue-Demi-Bold", sans-serif;
         font-weight: 600;
         line-height: 1.2;
         letter-spacing: 0;

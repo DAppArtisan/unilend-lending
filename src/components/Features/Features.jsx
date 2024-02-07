@@ -2,12 +2,12 @@
 import { useState } from "react";
 import "./styles/index.scss";
 import Image from "next/image";
-import Image1 from "../../../public/assets/2.png";
-import Image2 from "../../../public/assets/untitled.png";
-import Image3 from "../../../public/assets/4.png";
-import Image4 from "../../../public/assets/3.png";
-import Image5 from "../../../public/assets/nft.png";
-import Image6 from "../../../public/assets/5.png";
+import Image1 from "../../../public/assets/cl.svg";
+import Image2 from "../../../public/assets/DAP.svg";
+import Image3 from "../../../public/assets/fp.svg";
+import Image4 from "../../../public/assets/G.svg";
+import Image5 from "../../../public/assets/NFT.svg";
+import Image6 from "../../../public/assets/pl.svg";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import Carousel from "react-simply-carousel";
 import { motion } from "framer-motion";
