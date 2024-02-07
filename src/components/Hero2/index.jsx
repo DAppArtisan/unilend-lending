@@ -3,7 +3,7 @@ import "./styles/index.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-const BubbleText = ({text}) => {
+const BubbleText = ({ text }) => {
   return (
     <h1 className="heading04">
       {text.split("").map((child, idx) => (
@@ -17,12 +17,10 @@ const BubbleText = ({text}) => {
 
 const hero = () => {
   return (
-   
-<section className=" jss329 MuiPaper-elevation0-339">
-  <div className="bg-image"></div>
-  <video
+    <section className=" jss329 MuiPaper-elevation0-339">
+      <div className="bg-image"></div>
+      <video
         className="jss330"
-      
         autoPlay
         loop
         muted
@@ -31,25 +29,28 @@ const hero = () => {
       >
         <source src="/assets/hero-v.mp4" type="video/mp4" />
         <source src="/assets/lp.ogg" type="video/ogg" />
-        <Image src="/assets/hero-unilend.png" alt="poster" width={100} height={100}/>
-      </video> 
-    <div className="hero-info-container wrapper"> 
-      <div className="hero-info">
-           <BubbleText text="Making Every Assets Productive" />
+        <Image
+          src="/assets/hero-unilend.png"
+          alt="poster"
+          width={1900}
+          height={1024}
+        />
+      </video>
+      <div className="hero-info-container wrapper">
+        <div className="hero-info">
+          <BubbleText text="Making Every Assets Productive" />
 
           <p className="secondary-heading02">
-              Multichain permissionless lending & borrowing protocol for ALL
-               ERC20 tokens.
-            </p>
-            <Link href="#">
-               {" "}
-              <button className="button2">Launch App</button>
-            </Link>
-         </div>
-         </div>
-</section>
-
-
+            Multichain permissionless lending & borrowing protocol for ALL ERC20
+            tokens.
+          </p>
+          <Link href="https://testnet.unilend.finance" target="_blank">
+            {" "}
+            <button className="button2">Launch App</button>
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 };
 

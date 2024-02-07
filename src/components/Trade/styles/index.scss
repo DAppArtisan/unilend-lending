@@ -50,7 +50,10 @@
     img {
       width: 292px;
       height: 65px;
-    
+      @include lessThan(xl){
+        width: 200px;
+        height: 95px;
+      }
       @include lessThan(lg){
         width: 170px;
         height: 75px;

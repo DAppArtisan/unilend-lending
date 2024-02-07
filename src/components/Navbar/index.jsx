@@ -53,9 +53,9 @@ const Navbar = () => {
               <li>
                 <a href="#">Blogs</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Brand Kit</a>
-              </li>
+              </li> */}
               
             </motion.ul>
             <Link href="https://v1.unilend.finance" target="_blank">
@@ -90,7 +90,7 @@ const Navbar = () => {
                   <a href="#">Home</a>
                   <a href="#">Developers</a>
                   <a href="#">Blogs</a>
-                  <a href="#">Brand Kit</a>
+                  {/* <a href="#">Brand Kit</a> */}
                 </div>
               )}
             </div>

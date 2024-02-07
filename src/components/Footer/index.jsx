@@ -67,6 +67,15 @@ const index = () => {
                   Tutorial
                 </Link>
               </li>
+              {/* <li>
+                <Link
+                  className="sub-text"
+                  href="https://unilend.gitbook.io/unilend-finance/"
+                  target="_blank"
+                >
+                  Brand Kit
+                </Link>
+              </li> */}
             </ul>
             <ul className="footer-last-child">
               <li className="footer-title">NEWSLETTER</li>
