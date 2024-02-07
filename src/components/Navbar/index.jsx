@@ -75,7 +75,7 @@ const Navbar = () => {
                 animate="animate"
                 className="button main-btn"
               >
-                V2 App
+                V2 Testnet
               </motion.button>
             </Link>
 
