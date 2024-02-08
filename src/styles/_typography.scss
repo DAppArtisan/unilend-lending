@@ -185,7 +185,7 @@ $primaryText: #202f44;
   font-family: "Sans Serif Medium";
   width: 9.5rem;
   height: 2.5rem;
-  padding: 0px;
+  padding: 2px;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
@@ -202,11 +202,11 @@ $primaryText: #202f44;
 
   @include lessThan(md) {
     height: 1.5rem ;
-    width: 3.5rem ;
+    width: 3.9rem ;
   }
   // @include lessThan(md) {
   //   height: 2rem ;
-  //   width: 4rem ;
+  //   width: 4.5rem ;
   // }
 
   @include moreThan(md) {
