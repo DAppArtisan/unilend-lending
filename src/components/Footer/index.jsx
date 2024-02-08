@@ -168,13 +168,13 @@ const Index = () => {
                 
                 />
 
-                <Link href="#">
+               
                   <Image
                     className="logo-content-img"
                     src={Telegram}
                     alt="logo footer"
                   />
-                </Link>
+              
               </li>
               <li>
               {!isValid && <p style={{ color: 'red', paddingBottom:'10px' }}>Please enter a valid email address</p>}

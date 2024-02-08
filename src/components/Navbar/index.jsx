@@ -73,8 +73,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="hide">
-                <a className="links" href="#">Governance</a>{" "}
-                {/* Update the href to your governance route */}
+                <a className="links" href="https://vote.unilend.finance/" target="_blank">Governance</a>
               </li>
               <li>
                 <motion.button
@@ -136,7 +135,7 @@ const Navbar = () => {
                   >
                     Blogs
                   </a>
-                  <a href="#">Governance</a>
+                  <a href="https://vote.unilend.finance/" target="_blank">Governance</a>
                 </div>
               )}
             </div>
