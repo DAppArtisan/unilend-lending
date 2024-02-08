@@ -4,8 +4,27 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import {
+  Base,
+  Bluzelle,
+  Coindcx,
+  Cryptolocally,
+  Wazirx,
+  Umbrella,
+  Risk,
+  Tidal,
+  Redkite,
+  Qi,
+  Poolz,
+  Polka,
+  Playcent,
+  Oddz,
+  Nord,
+  Genesis,
+  Espn,
+  Division,
+  Dfyn,
+  Cryberfi,
   Ankr,
-  Bitthumb,
   Bzx,
   Coin98,
   Fantom,
@@ -14,15 +33,12 @@ import {
   Mirror,
   Mxc,
   Paraswap,
-  Plutos,
   Polygon,
   Probit,
-  Starfi,
   Union,
-  Unore,
   Yop,
-  Zeroswap,
-} from "../../../public/assets/client";
+  Zeroswap
+} from "../../../public/assets/clients";
 
 const index = () => {
   return (
@@ -53,11 +69,27 @@ const index = () => {
             <div className="inn-bx">
               <Image src={Probit} alt="probit" />
             </div>
-            <div className="inn-bx">
-              <Image src={Bitthumb} alt="bitthumb"/>
-            </div>
+           
             <div className="inn-bx">
               <Image src={Bzx} alt="bzx"/>
+            </div>
+            <div className="inn-bx">
+              <Image src={Base} alt="Base logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Bluzelle} alt="Bluzelle logo"/>
+            </div>
+            <div className="inn-bx">
+              <Image src={Coindcx} alt="Coindcx logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Cryptolocally} alt="Cryptolocally" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Wazirx} alt="Wazirx"/>
+            </div>
+            <div className="inn-bx">
+              <Image src={Umbrella} alt="bzx"/>
             </div>
           </Marquee>
           <Marquee
@@ -79,15 +111,31 @@ const index = () => {
               <Image src={Ankr} alt="ankr logo" />
             </div>
             <div className="inn-bx">
-              <Image src={Starfi} alt="Starfi logo" />
+              <Image src={Risk} alt="Risk logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Tidal} alt="Tidal logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Redkite} alt="Redkite logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Qi} alt="Qi logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Poolz} alt="Poolz logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Polka} alt="Polka logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Playcent} alt="Playcent logo" />
             </div>
           </Marquee>
           <Marquee
             direction="left"
           >
-            <div className="inn-bx">
-              <Image src={Unore} alt="Unore logo" />
-            </div>
+         
             <div className="inn-bx">
               <Image src={Paraswap} alt="Paraswap logo" />
             </div>
@@ -101,7 +149,25 @@ const index = () => {
               <Image src={Mirror} alt="Mirror logo" />
             </div>
             <div className="inn-bx">
-              <Image src={Plutos} alt="Plutos logo" />
+              <Image src={Oddz} alt="Oddz logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Nord} alt="Nord logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Genesis} alt="Genesis logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Espn} alt="Espn logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Division} alt="Division logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Dfyn} alt="Dfyn logo" />
+            </div>
+            <div className="inn-bx">
+              <Image src={Cryberfi} alt="Dfyn logo" />
             </div>
           </Marquee>
         </div>
