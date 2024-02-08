@@ -177,7 +177,7 @@ const Index = () => {
                 </Link>
               </li>
               <li>
-              {!isValid && <p style={{ color: 'red' }}>Please enter a valid email address</p>}
+              {!isValid && <p style={{ color: 'red', paddingBottom:'10px' }}>Please enter a valid email address</p>}
               <button onClick={handleSubmit} className="button">
                   Submit
                 </button>
