@@ -32,6 +32,12 @@
       width: 462px;
       aspect-ratio: 0.0.832432;
       height: auto;
+      @include lessThan(sm){
+        width: 292px;
+      }
+      @include lessThan(md){
+        width: 400px;
+      }
     }
   .gradient {
     &:before {
