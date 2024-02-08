@@ -20,18 +20,23 @@
   a {
     border: 1px solid #140095;
     padding: 20px;
-    background: #4b2eff;
+    background: linear-gradient(to bottom right, #6e3eff, #4526ff);
     border-radius: 50%;
 
     @include lessThan(xl) {
       padding: 13px;
     }
-    @include lessThan(lg) {
-      padding: 15px;
-    }
+   
     img {
       width: 28px;
-      height: 28px;
+      height: auto;
+      aspect-ratio: 1;
+      @include lessThan(lg){
+        width: 20px;
+      }
+      @include lessThan(sm){
+        width: 15px;
+      }
     }
   }
 

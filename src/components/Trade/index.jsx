@@ -6,7 +6,7 @@ import Uniswap from "../../../public/assets/uniswap.svg";
 import { motion } from "framer-motion";
 const index = () => (
   <section>
-    <div className="container padding-top-100 relative">
+    <div className="container padding-block-100 relative">
       <div className="bg-trade"> </div>
       <h1 className="heading01">
         Trade UFT Token <br />

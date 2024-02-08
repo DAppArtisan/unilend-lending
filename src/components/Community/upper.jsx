@@ -5,7 +5,7 @@ export default function Upper({ children, href }) {
   return (
     <motion.a
       className="shift-l"
-      href={href}
+      href={href} target="_blank"
       initial={{ x: 0 }}
       whileHover={{ y: -20 }}
       transition={{ 

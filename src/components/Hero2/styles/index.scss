@@ -31,7 +31,7 @@
 }
 .jss329 {
   overflow: hidden;
-  margin-top: -5rem;
+  margin-top: -7rem;
   @include lessThan(lg) {
     margin-top: 23rem;
   }
@@ -51,6 +51,7 @@
       width: 318px;
       height: 355px;
       z-index: 1;
+      opacity: .8;
     @include lessThan(md) {
       display: none;
     }

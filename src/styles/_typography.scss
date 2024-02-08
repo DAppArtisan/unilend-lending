@@ -108,9 +108,7 @@ $primaryText: #202f44;
   @include lessThan(md) {
     line-height: $line-height-base;
   }
-  @include lessThan(sm) {
-    padding: var(--size-200);
-  }
+ 
 }
 
 .heading03 {
@@ -198,25 +196,28 @@ $primaryText: #202f44;
     scale: 1;
     border: 1px solid $border-button-hover;
   }
-
+ 
+  @include lessThan(xs) {
+    height: 1.5rem ;
+    width: 3.8rem !important;
+  }
 
   @include lessThan(md) {
     height: 1.5rem ;
-    width: 3.9rem ;
+    width: 4.8rem ;
   }
-  // @include lessThan(md) {
-  //   height: 2rem ;
-  //   width: 4.5rem ;
-  // }
+
+ 
 
   @include moreThan(md) {
     height: 2rem;
-    width: 6rem;
+    width: 7rem;
   }
   @include moreThan(xl){
     width: 9.5rem;
   height: 2.5rem;
   }
+
 }
 
 .button2 {

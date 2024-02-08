@@ -34,10 +34,10 @@ const index = () => {
               </p>
             </motion.div>
             <div className="flex padding-block-200 social">
-              <Upper href="www.medium.com">
+              <Upper href="https://unilend.medium.com/">
                 <Image src={Medium} width="30" height="30" />{" "}
               </Upper>
-              <Upper href="www.reddit.com">
+              <Upper href="https://www.instagram.com/unilendfinance/">
                 <Image
                   src={Instagram}
                   width="30"
@@ -45,10 +45,10 @@ const index = () => {
                   alt="Instagram icon"
                 />
               </Upper>
-              <Upper href="www.reddit.com">
+              <Upper href="https://www.reddit.com/r/UniLend/">
                 <Image src={Reddit} width="30" height="30" alt="Reddit icon" />
               </Upper>
-              <Upper href="www.telegram.com">
+              <Upper href="https://t.me/UniLendFinance">
                 <Image
                   src={Telegram}
                   width="30"
@@ -56,7 +56,7 @@ const index = () => {
                   alt="Reddit icon"
                 />
               </Upper>
-              <Upper href="www.twitter.com">
+              <Upper href="https://twitter.com/UniLend_Finance">
                 <Image src={Twitter} width="30" height="30" alt="Reddit icon" />
               </Upper>
             </div>

@@ -13,7 +13,7 @@ import {
 const index = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <section className="footer">
+    <section className="footer padding-top-900">
       <div className="container2">
         <div className="common-container">
           <div className="footer-container">
@@ -67,7 +67,7 @@ const index = () => {
                   Tutorial
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link
                   className="sub-text"
                   href="https://unilend.gitbook.io/unilend-finance/"
@@ -75,7 +75,7 @@ const index = () => {
                 >
                   Brand Kit
                 </Link>
-              </li> */}
+              </li>
             </ul>
             <ul className="footer-last-child">
               <li className="footer-title">NEWSLETTER</li>

@@ -75,6 +75,13 @@ const index = () => {
                 </p>
               </div>
             </div>
+            <a
+              href="https://medium.com/unilend-finanace/insider-series-introducing-an-innovative-approach-to-lending-pools-b2b5dcbc1f5d"
+              target="_blank"
+            >
+              {" "}
+              <button className="button2">Explore</button>
+            </a>
           </motion.div>
         </div>
       </div>

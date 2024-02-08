@@ -256,6 +256,10 @@ ol[role="list"] {
   padding-top: 2rem;
 }
 
+.padding-top-900{
+  padding-top:var(--size-900);
+}
+
 .text-left{
   text-align: left !important;
 }
@@ -345,6 +349,7 @@ body{
 }
 a{
   text-decoration: none;
+  color: #ffffff;
 }
 
 /* media querry  */
@@ -352,9 +357,13 @@ a{
   .padding-block-900{
     padding-block:2rem;
   }
+  .padding-top-900{
+    padding-top:2rem;
+  }
  }
  @media screen and (max-width:999px) {
   .padding-block-900{
-    padding-block:3rem;
+    padding-block:2.5rem;
   }
+ 
  }

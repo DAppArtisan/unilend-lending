@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import "./styles/index.scss";
 import Image1 from "../../../public/assets/box_gif.gif";
 import Icon1 from "../../../public/assets/icon1.svg";
@@ -46,8 +47,11 @@ const index = () => (
               </p>
             </div>
           </div>
-          {/* <SpotlightButton text="Lending" /> */}
-          <button className="button2">Lending</button>
+
+          <a href="https://bit.ly/3FCj5Bn" target="_blank">
+            {" "}
+            <button className="button2"> Know More</button>
+          </a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0.3, y: 100 }}

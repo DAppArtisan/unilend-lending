@@ -6,8 +6,8 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import Carousel from "react-simply-carousel";
 import { Blog1 } from "../../../public/assets";
 import "./styles/index.scss";
-const Carousal = ({ posts }) => {
-  console.log(posts);
+const Carousal = () => {
+
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   return (
     <div className="padding-block-300">
@@ -55,7 +55,7 @@ const Carousal = ({ posts }) => {
         speed={400}
         easing="linear"
       >
-        {posts.items.map((post) => (
+        {/* {posts.items.map((post) => (
           <div key={post.guid} className="carousal-bxx">
             <Link href={post.link} target="_blank">
               <div className="carousal-data">
@@ -74,7 +74,25 @@ const Carousal = ({ posts }) => {
               </div>
             </Link>
           </div>
-        ))}
+        ))} */}
+          <div className="carousal-bxx">
+            <Link href="#" target="_blank">
+              <div className="carousal-data">
+                <Image src={Blog1} alt="blog image" />
+                <div className="bx_outer floww">
+                  <div className="bx_inn">
+                    <p className="">From [Cointelegraph]</p>
+                    <p className="">Nov 23, 2023</p>
+                  </div>
+                  <h4 className="padding-block-100 title">Date revealed: Binance listed UniLend’s product to launch on Ethereum Mainnet on 12th Feb</h4>
+                  <p className=" para">
+                    Wrapping up the merry end of 2023, December has been a
+                    joyous whirlwind of celebrations and achievements.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
       </Carousel>
     </div>
   );
