@@ -1,7 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./styles/index.scss";
-import styles from "./styles/style.module.scss";
 
 import Image from "next/image";
 import Logo from "../../../public/assets/logo.svg";
@@ -16,10 +15,28 @@ const textVariants = {
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
+  const dropdownRef = useRef(null);
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    if (isDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isDropdownOpen]);
 
   return (
     <header className="primary-header relative">
@@ -52,7 +69,7 @@ const Navbar = () => {
               className="nav-list"
             >
               <li className="hide">
-                <a className="links" href="/">Home</a>
+                <a className="links" href="#">Home</a>
               </li>
               <li className="hide">
                 <a className="links"
@@ -119,8 +136,8 @@ const Navbar = () => {
             <div className="dropdownContainer">
              
               {isDropdownOpen && (
-                <div className="dropdownContent">
-                  <a href="/">Home</a>
+                <div ref={dropdownRef} className="dropdownContent">
+                  <a href="#">Home</a>
                   <a
                     href="https://unilend.gitbook.io/unilend-finance/"
                     target="_blank"
