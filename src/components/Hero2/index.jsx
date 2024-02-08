@@ -3,7 +3,7 @@ import "./styles/index.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Heroimage from "../../..//public/assets/hero-unilend.png"
+import Heroimage from "../../..//public/assets/hero2.png"
 const BubbleText = ({ text }) => {
   return (
     <motion.h1
