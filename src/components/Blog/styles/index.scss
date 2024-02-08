@@ -89,7 +89,7 @@
       width: calc(100vw - 120px);
     }
     img {
-      height: 200px;
+    
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       @include lessThan(sm) {

@@ -4,13 +4,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import Carousel from "react-simply-carousel";
-import  Media1  from "../../../public/assets/media1.svg";
-import  Media2  from "../../../public/assets/media2.svg";
-import  Media3  from "../../../public/assets/media3.svg";
-import  Media4  from "../../../public/assets/media4.svg";
-import  Media5  from "../../../public/assets/media5.svg";
-import  Media6  from "../../../public/assets/media6.svg";
-import  Media7  from "../../../public/assets/media7.svg";
+import  Media1  from "../../../public/assets/media1.png";
+import  Media2  from "../../../public/assets/media2.png";
+import  Media3  from "../../../public/assets/media3.png";
+import  Media4  from "../../../public/assets/media4.png";
+import  Media5  from "../../../public/assets/media5.png";
+import  Media6  from "../../../public/assets/media6.png";
+import  Media7  from "../../../public/assets/media7.png";
 
 import "./styles/index.scss";
 const Carousal = () => {
