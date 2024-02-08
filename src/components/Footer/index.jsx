@@ -19,46 +19,73 @@ import { ToastContainer } from "react-toastify";
 const Index = () => {
   const currentYear = new Date().getFullYear();
   const [email, setEmail] = useState("");
+  const [isValid, setIsValid] = useState(true);
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setEmail(value);
+    setIsValid(validateEmail(value));
+  };
+
+  const validateEmail = (email) => {
+    // Regular expression for validating email addresses
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = fetch("https://sendgrid-api.vercel.app/", {
-        method: "put",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          mail: email,
-        }),
-      });
-      if (response) {
-        toast("Subscription successful", {
-          hideProgressBar: true,
-          autoClose: 2000,
-          type: "success",
-          position: "bottom-right",
+    
+    // Check if email is valid
+    if (isValid) {
+      try {
+        const response = await fetch("https://sendgrid-api.vercel.app/", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            mail: email,
+          }),
         });
-        setEmail("");
-      } else {
-        // Handle error
+        if (response) {
+          console.log("send email")
+          toast("Subscription successful", {
+            hideProgressBar: true,
+            autoClose: 2000,
+            type: "success",
+            position: "bottom-right",
+          });
+          setEmail("");
+        } else {
+          // Handle error
+          console.log("err email")
+          toast("Subscription failed", {
+            hideProgressBar: true,
+            autoClose: 2000,
+            type: "error",
+            position: "bottom-right",
+          });
+        }
+      } catch (error) {
+        console.error("Error subscribing:", error);
         toast("Subscription failed", {
           hideProgressBar: true,
           autoClose: 2000,
-          type: "success",
+          type: "error",
           position: "bottom-right",
         });
       }
-    } catch (error) {
-      console.error("Error subscribing:", error);
-      toast("Subscription failed", {
+    } else {
+      // If email is not valid, show an error toast
+      toast("Please enter a valid email address", {
         hideProgressBar: true,
         autoClose: 2000,
-        type: "success",
+        type: "error",
         position: "bottom-right",
       });
     }
   };
+  
 
   return (
     <section className="footer padding-top-900">
@@ -137,7 +164,8 @@ const Index = () => {
                   placeholder="Email address"
                   name="email"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={handleChange}
+                
                 />
 
                 <Link href="#">
@@ -149,9 +177,11 @@ const Index = () => {
                 </Link>
               </li>
               <li>
-                <button onClick={handleSubmit} className="button">
+              {!isValid && <p style={{ color: 'red' }}>Please enter a valid email address</p>}
+              <button onClick={handleSubmit} className="button">
                   Submit
                 </button>
+
                 <ToastContainer />
               </li>
               <div className="logo-content">
