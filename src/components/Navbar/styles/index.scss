@@ -26,7 +26,18 @@
     align-items: center;
     max-width: 100%;
     height: auto;
+    .logo{
+      @include lessThan(md){
+        width:140px;
+        height: auto;
+      }
+      @include lessThan(sm){
+        width:100px;
+        height: auto;
+      }
+    }
   }
+ 
  
 }
 .primary-navigation {
