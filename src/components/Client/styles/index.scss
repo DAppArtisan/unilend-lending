@@ -6,7 +6,13 @@
   align-items: center;
   flex-wrap: wrap;
   mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
-  -webkit-mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
 
   .inn-bx {
     position: relative;
@@ -18,20 +24,19 @@
     height: 4.625rem;
     border-radius: 9px;
     justify-content: center;
-    @include lessThan(md){
-        width: 100px;
-        height: 40px;
-        margin: 10px;
+    @include lessThan(md) {
+      width: 100px;
+      height: 40px;
+      margin: 10px;
     }
-   
-    
+
     img {
-      width: 130px;
+      width: 160px;
+      height: auto;
       aspect-ratio: 3.3333;
-      @include lessThan(md){
+      @include lessThan(md) {
         width: 80px;
       }
-     
     }
   }
 }
