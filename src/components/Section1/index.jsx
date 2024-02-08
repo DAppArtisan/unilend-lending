@@ -9,7 +9,7 @@ import Icon3 from "../../../public/assets/icon3.svg";
 
 import { motion } from "framer-motion";
 const index = () => (
-  <section className="section1 padding-block-900">
+  <section id="about-us" className="section1 padding-block-900">
     <div className="container">
       <div className="even-colums">
         <motion.div
@@ -18,7 +18,7 @@ const index = () => (
           transition={{ ease: "easeInOut", duration: 0.8 }}
           className=""
         >
-          <h2 className="heading02">Permission less Listing</h2>
+          <h2 id="about-us" className="heading02">Permission less Listing</h2>
           <p className="secondary-heading02">
             Any ERC20 token will be able to list without any entity controlling
             the listing process, making UniLend’s lending and borrowing

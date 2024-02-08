@@ -24,9 +24,7 @@ const Features = () => {
         >
           <h2 className="heading01">Our Features</h2>
           <p className="secondary-heading01 padding-top-200">
-            Any user can create any ERC20/ERC20 pool to begin lending and
-            borrowing <br></br> for those assets, thereby making every digital
-            asset productive.
+            Explore Our Innovative Features: Dive into a World of Permissionless Lending <br></br> & Borrowing to Unlock Endless DeFi Possibilities!
           </p>
         </motion.div>
 

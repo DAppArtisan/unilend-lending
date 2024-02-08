@@ -94,7 +94,7 @@ const Index = () => {
           <div className="footer-container">
             <ul className="footer-first-child">
               <li className="footer-title">GENERAL</li>
-              <Link href="#explore-dapp-section" className="sub-text">
+              <Link href="#about-us" className="sub-text">
                 <li>About Us</li>
               </Link>
               <Link
@@ -104,6 +104,7 @@ const Index = () => {
               >
                 <li>Career</li>
               </Link>
+           
             </ul>
             <ul>
               <li className="footer-title">COMMUNITY</li>
@@ -127,6 +128,15 @@ const Index = () => {
               <li>
                 <Link
                   className="sub-text"
+                  href="https://github.com/uniLend"
+                  target="_blank"
+                >
+                  Github
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="sub-text"
                   href="https://unilend.gitbook.io/unilend-finance/"
                   target="_blank"
                 >
@@ -142,15 +152,7 @@ const Index = () => {
                   Tutorial
                 </Link>
               </li>
-              <li>
-                <Link
-                  className="sub-text"
-                  href="https://unilend.gitbook.io/unilend-finance/"
-                  target="_blank"
-                >
-                  Brand Kit
-                </Link>
-              </li>
+           
             </ul>
             <ul className="footer-last-child">
               <li className="footer-title">NEWSLETTER</li>
