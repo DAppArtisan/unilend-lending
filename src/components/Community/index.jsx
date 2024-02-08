@@ -35,29 +35,29 @@ const index = () => {
             </motion.div>
             <div className="flex padding-block-200 social">
               <Upper href="https://unilend.medium.com/">
-                <Image src={Medium} width="30" height="30" />{" "}
+                <Image src={Medium} width="30" height="30" alt="medium logo"/>
               </Upper>
               <Upper href="https://www.instagram.com/unilendfinance/">
                 <Image
                   src={Instagram}
                   width="30"
                   height="30"
-                  alt="Instagram icon"
+                  alt="Instagram logo"
                 />
               </Upper>
               <Upper href="https://www.reddit.com/r/UniLend/">
-                <Image src={Reddit} width="30" height="30" alt="Reddit icon" />
+                <Image src={Reddit} width="30" height="30" alt="Reddit logo" />
               </Upper>
               <Upper href="https://t.me/UniLendFinance">
                 <Image
                   src={Telegram}
                   width="30"
                   height="30"
-                  alt="Reddit icon"
+                  alt="telegram logo"
                 />
               </Upper>
               <Upper href="https://twitter.com/UniLend_Finance">
-                <Image src={Twitter} width="30" height="30" alt="Reddit icon" />
+                <Image src={Twitter} width="30" height="30" alt="x logo" />
               </Upper>
             </div>
           </div>

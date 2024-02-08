@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
 import "./styles/index.scss";
-import Image1 from "../../../public/assets/box_gif.gif";
 import Icon1 from "../../../public/assets/p1.svg";
 import Icon2 from "../../../public/assets/p2.svg";
 import Icon3 from "../../../public/assets/p3.svg";
-import { Isolated } from "../../../public/assets";
+import  Isolated  from "../../../public/assets/dualpool.gif";
 
 import { motion } from "framer-motion";
 const index = () => {

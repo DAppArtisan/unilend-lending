@@ -1,5 +1,7 @@
+"use client";
 import "./styles/index.scss";
 import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
 import Logo from "../../../public/assets/logo.svg";
 import {
@@ -10,8 +12,54 @@ import {
   Linkdin,
   Medium,
 } from "../../../public/assets/";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+
 const index = () => {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = fetch("https://sendgrid-api.vercel.app/", {
+        method: "put",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          mail: email,
+        }),
+      });
+      if (response) {
+        toast("Subscription successful", {
+          hideProgressBar: true,
+          autoClose: 2000,
+          type: "success",
+          position: "bottom-right",
+        });
+        setEmail("");
+      } else {
+        // Handle error
+        toast("Subscription failed", {
+          hideProgressBar: true,
+          autoClose: 2000,
+          type: "success",
+          position: "bottom-right",
+        });
+      }
+    } catch (error) {
+      console.error("Error subscribing:", error);
+      toast("Subscription failed", {
+        hideProgressBar: true,
+        autoClose: 2000,
+        type: "success",
+        position: "bottom-right",
+      });
+    }
+  };
+
   return (
     <section className="footer padding-top-900">
       <div className="container2">
@@ -88,6 +136,8 @@ const index = () => {
                   type="email"
                   placeholder="Email address"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
 
                 <Link href="#">
@@ -99,7 +149,10 @@ const index = () => {
                 </Link>
               </li>
               <li>
-                <button className="button">Submit</button>
+                <button onClick={handleSubmit} className="button">
+                  Submit
+                </button>
+                <ToastContainer />
               </li>
               <div className="logo-content">
                 <Link href="https://t.me/UniLendFinance" target="_blank">
@@ -166,7 +219,6 @@ const index = () => {
                 alt="footer logo"
               />
             </div>
-          
           </div>
         </div>
       </div>

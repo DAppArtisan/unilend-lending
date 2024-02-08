@@ -2,12 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./styles/index.scss";
-import Image1 from "../../../public/assets/box_gif.gif";
+import Image1 from "../../../public/assets/permission.gif";
 import Icon1 from "../../../public/assets/icon1.svg";
 import Icon2 from "../../../public/assets/icon2.svg";
 import Icon3 from "../../../public/assets/icon3.svg";
-import RedGradient from "../../../public/assets/red.svg";
-// import SpotlightButton from "./SpotlightButton/SpotlightButton";
+
 import { motion } from "framer-motion";
 const index = () => (
   <section className="section1 padding-block-900">

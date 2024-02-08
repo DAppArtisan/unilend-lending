@@ -92,6 +92,7 @@
           height: auto;
         }
       }
+    }
     
     .dropdownContainer {
       position: relative;
@@ -99,8 +100,8 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 51px;
-      left: -90px;
+      top: 29px;
+      left: -130px;
       background-color: #1e174c;
       box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
         0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
@@ -115,6 +116,7 @@
         color: $white;
         &:hover {
           background-color: #191050;
+          border-radius: 60px;
         }
       }
     }
@@ -149,5 +151,4 @@
     align-items: center;
     justify-content: center;
   }
-}
 }
