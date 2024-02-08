@@ -353,3 +353,8 @@ a{
     padding-block:2rem;
   }
  }
+ @media screen and (max-width:999px) {
+  .padding-block-900{
+    padding-block:3rem;
+  }
+ }

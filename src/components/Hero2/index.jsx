@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const BubbleText = ({ text }) => {
   return (
     <motion.h1 initial={{ opacity: 0.1, y: -80, }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ ease: "easeInOut", duration: .6 }} className="heading04">
+    animate={{ opacity: 1 , y:0}}
+    transition={{ ease: "easeInOut", duration: 1 }} className="heading04">
       {text.split("").map((child, idx) => (
         <span className="bold" key={idx}>
           {child}
@@ -22,7 +22,7 @@ const hero = () => {
     <section className=" jss329 MuiPaper-elevation0-339">
       <div className="bg-image"></div>
       <motion.video initial={{ opacity: 0.1}}
-            whileInView={{ opacity: 1}}
+           animate={{ opacity: 1}}
             transition={{ ease: "easeInOut", duration: 1 }}
         className="jss330"
         autoPlay
@@ -45,14 +45,14 @@ const hero = () => {
           <BubbleText text="Making Every Assets Productive" />
 
           <motion.p initial={{ opacity: 0.1, y: -80, }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeInOut", duration: .8 }} className="secondary-heading02">
+           animate={{ opacity: 1 , y:0}}
+            transition={{ ease: "easeInOut", duration: .9 }} className="secondary-heading02">
             Multichain permissionless lending & borrowing protocol for ALL ERC20
             tokens.
           </motion.p>
           <motion.a initial={{ opacity: 0.1, y: -80, }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1 }} 
+           animate={{ opacity: 1 , y:0}}
+            transition={{ ease: "easeInOut", duration: .8 }} 
           href="https://testnet.unilend.finance" target="_blank">
             {" "}
             <button className="button2">Launch App</button>
