@@ -16,7 +16,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
-const index = () => {
+const Index = () => {
   const currentYear = new Date().getFullYear();
   const [email, setEmail] = useState("");
 
@@ -231,4 +231,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

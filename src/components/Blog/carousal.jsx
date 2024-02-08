@@ -72,9 +72,9 @@ const Carousal = () => {
                     <p className="">From [Cointelegraph]</p>
                     <p className="">Feb 01, 2024</p>
                   </div>
-                  <h4 className="padding-block-100 title">Date revealed: Binance listed UniLend’s product to launch on Ethereum Mainnet on 12th Feb</h4>
+                  <h4 className="padding-block-100 title">Date revealed: Binance listed UniLend&apos;s product to launch on Ethereum Mainnet on 12th Feb</h4>
                   <p className=" para">
-                  UniLend's mission is succinctly encapsulated in its commitment to "Make Every Digital Asset Productive." 
+                  UniLend&apos;s mission is succinctly encapsulated in its commitment to &quot;Make Every Digital Asset Productive.&quot;
                   </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const Carousal = () => {
                     <p className="">From [benzinga]</p>
                     <p className="">FEB 01, 2024</p>
                   </div>
-                  <h4 className="padding-block-100 title">Date Revealed: Binance listed UniLend’s product to launch on Ethereum Mainnet on 12th Feb</h4>
+                  <h4 className="padding-block-100 title">Date Revealed: Binance listed UniLend&apos;s product to launch on Ethereum Mainnet on 12th Feb</h4>
                   <p className=" para">
                   UniLend Finance, the decentralized finance (DeFi) platform, is set to launch its much anticipated UniLend V2 on Ethereum Mainnet on 12th February 2024.
                   </p>
@@ -108,7 +108,7 @@ const Carousal = () => {
                   </div>
                   <h4 className="padding-block-100 title">How UniLend is shaping the future of DeFi with permissionless lending and borrowing protocol</h4>
                   <p className=" para">
-                  UniLend Finance published their protocol update blog introducing UniLend v2. It is stated that with this update,
+                  UniLend Finance published their protocol update blog introducing UniLend v2. It is stated that with this update,
                   </p>
                 </div>
               </div>
@@ -141,9 +141,9 @@ const Carousal = () => {
                     <p className="">From [Coindesk]</p>
                     <p className="">Sep 29, 2020</p>
                   </div>
-                  <h4 className="padding-block-100 title">Investors Flock to India's DeFi Scene Months After Central Bank Ban Overturned</h4>
+                  <h4 className="padding-block-100 title">Investors Flock to India&apos;s DeFi Scene Months After Central Bank Ban Overturned</h4>
                   <p className=" para">
-                  UniLend’s mission is succinctly encapsulated in its commitment to “Make Every Digital Asset Productive.”
+                  UniLend&apos;s mission is succinctly encapsulated in its commitment to “Make Every Digital Asset Productive.”
 …
                   </p>
                 </div>
@@ -179,7 +179,7 @@ const Carousal = () => {
                   </div>
                   <h4 className="padding-block-100 title">Making Every Digital Asset Productive With UniLend V2</h4>
                   <p className=" para">
-                  UniLend V2 is a permissionless lending and borrowing protocol on Ethereum Sepolia Testnet. It offers DeFi services with new features,
+                  UniLend V2 is a permissionless lending and borrowing protocol on Ethereum Sepolia Testnet. It offers DeFi services with new features,
 …
                   </p>
                 </div>
