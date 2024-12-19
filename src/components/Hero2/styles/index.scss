@@ -1,8 +1,6 @@
 @import "../../../styles";
 .bold {
-  transition:
-    0.35s font-weight,
-    0.35s color;
+  transition: 0.35s font-weight, 0.35s color;
 }
 
 .bold:hover {
@@ -42,16 +40,16 @@
     margin-top: 17rem;
   }
   .bg-image {
-      background-image: url("../../../../public//assets/gr--red.svg");
-      background-repeat: no-repeat;
-      background-position: top -12rem right -10rem;
-      position: absolute;
-      top: 0%;
-      right: 0px;
-      width: 318px;
-      height: 355px;
-      z-index: 1;
-      opacity: .7;
+    background-image: url("../../../../public//assets/gr--red.svg");
+    background-repeat: no-repeat;
+    background-position: top -12rem right -10rem;
+    position: absolute;
+    top: 0%;
+    right: 0px;
+    width: 318px;
+    height: 355px;
+    z-index: 1;
+    opacity: 0.7;
     @include lessThan(md) {
       display: none;
     }
@@ -69,8 +67,6 @@
     @include lessThan(md) {
       padding-top: 5rem;
     }
-
-  
   }
   .hero-info-container {
     width: 100%;
@@ -84,7 +80,7 @@
       position: absolute;
       z-index: 999;
       display: flex;
-      width: 576px;
+      width: 685px;
       flex-direction: column;
       -webkit-box-align: start;
       align-items: flex-start;
@@ -92,7 +88,7 @@
       @media (max-width: 1700px) {
         margin-left: 70px;
       }
-     
+
       @include lessThan(lg) {
         text-align: center;
         justify-content: center;
@@ -120,7 +116,6 @@
       }
     }
   }
-
 
   .jss331 {
     z-index: 2;
