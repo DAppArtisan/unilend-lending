@@ -88,10 +88,10 @@ const index = () => {
               </div>
             </div>
             <div className='buttons'>
-              <a href='https://bit.ly/3FCj5Bn' target='_blank'>
+              <a href='#'>
                 <button className='button2'> Learn More</button>
               </a>
-              <a href='https://v1.unilend.finance' target='_blank'>
+              <a href='#'>
                 <button className='button2'>Launch App</button>
               </a>
             </div>

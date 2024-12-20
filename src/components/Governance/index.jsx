@@ -46,7 +46,8 @@ export default function Governance() {
               </p>
             </div>
           </a>
-          <a href='#' target='_blank'>
+          {/* <a href='#' target='_blank'> */}
+          <a href='#'>
             <div className='content off-chain'>
               <div>
                 <p>OFF-CHAIN VOTING</p>
