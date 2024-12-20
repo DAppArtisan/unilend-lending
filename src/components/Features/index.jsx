@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import "./index.scss";
 import Image from "next/image";
 import product1 from "../../../public/assets/product1.png";
-import product2 from "../../../public/assets/product2.png";
+import product2 from "../../../public/assets/product2.jpeg";
 import product3 from "../../../public/assets/product3.png";
 
 export default function OurFeatures() {

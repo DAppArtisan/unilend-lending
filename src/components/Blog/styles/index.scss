@@ -92,14 +92,14 @@
       @include lessThan(sm) {
         width: 100%;
       }
-      border: 1px solid #000;
+      border: 1px solid #fff;
     }
     .bx_outer {
       height: 200px;
       padding: 15px;
       border-radius: 0px 0px 24px 24px;
       // border: 1px solid $primary;
-      border: 1px solid #000;
+      border: 1px solid #fff;
       .bx_inn {
         display: flex;
         justify-content: space-between;
