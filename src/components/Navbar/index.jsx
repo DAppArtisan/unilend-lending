@@ -28,131 +28,168 @@ const Navbar = () => {
     };
 
     if (isDropdownOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isDropdownOpen]);
 
   return (
-    <header className="primary-header relative">
-      <div className="wrapper">
-        <div className="nav-wrapper">
+    <header className='primary-header relative'>
+      <div className='wrapper'>
+        <div className='nav-wrapper'>
           <motion.div
-            className="logo-bx"
+            className='logo-bx'
             variants={textVariants}
-            initial="initial"
-            animate="animate"
+            initial='initial'
+            animate='animate'
           >
-            <a href="#">
+            <a href='#'>
               <Image
-                className="logo"
+                className='logo'
                 src={Logo}
-                width="165"
-                height="46"
-                alt="Logo"
+                width='165'
+                height='46'
+                alt='Logo'
               />
             </a>
           </motion.div>
 
-          <nav className="primary-navigation">
+          <nav className='primary-navigation'>
             <motion.ul
               variants={textVariants}
-              initial="initial"
-              animate="animate"
-              aria-label="Primary"
-              role="list"
-              className="nav-list"
+              initial='initial'
+              animate='animate'
+              aria-label='Primary'
+              role='list'
+              className='nav-list'
             >
-              <li className="hide">
+              {/* <li className="hide">
                 <a className="links" href="#">Home</a>
-              </li>
-              <li className="hide">
-                <a className="links"
-                  href="https://unilend.gitbook.io/unilend-finance/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              </li> */}
+              <li className='hide'>
+                <a
+                  className='links'
+                  href='https://unilend.gitbook.io/unilend-finance/'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   Developers
                 </a>
               </li>
-              <li className="hide">
-                <a className="links"
-                  href="https://unilend.medium.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <li className='hide'>
+                <a
+                  className='links'
+                  href='https://unilend.medium.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   Blogs
                 </a>
               </li>
-              <li className="hide">
-                <a className="links" href="https://vote.unilend.finance/" target="_blank">Governance</a>
+              <li className='hide'>
+                <a
+                  className='links'
+                  href='https://vote.unilend.finance/'
+                  target='_blank'
+                >
+                  Governance
+                </a>
               </li>
-              <li>
+              {/* <li>
                 <motion.button
                   variants={textVariants}
-                  initial="initial"
-                  animate="animate"
-                  className="button main-btn"
+                  initial='initial'
+                  animate='animate'
+                  className='button main-btn'
                 >
                   <a
-                    href="https://v1.unilend.finance"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href='https://v1.unilend.finance'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
                     V1 App
                   </a>
                 </motion.button>
-              </li>
+              </li> */}
               <li>
                 <motion.button
                   variants={textVariants}
-                  initial="initial"
-                  animate="animate"
-                  className="button main-btn"
+                  initial='initial'
+                  animate='animate'
+                  className='button main-btn'
                 >
                   <a
-                    href="https://testnet.unilend.finance"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href='https://v2.unilend.finance/'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
-                    V2 Testnet
+                    V2 App
                   </a>
                 </motion.button>
               </li>
               <li>
-              <div className="side_bx">
-                <div className="hamIcon" onClick={toggleDropdown}>
-                  <Image src={Hamburger} />
+                <motion.button
+                  variants={textVariants}
+                  initial='initial'
+                  animate='animate'
+                  className='button main-btn'
+                >
+                  <a
+                    href='https://app.numa.network/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Numa
+                  </a>
+                </motion.button>
+              </li>
+              <li>
+                <motion.button
+                  variants={textVariants}
+                  initial='initial'
+                  animate='animate'
+                  className='button main-btn'
+                >
+                  <a href='#' target='_blank' rel='noopener noreferrer'>
+                    Lamaa
+                  </a>
+                </motion.button>
+              </li>
+              <li>
+                <div className='side_bx'>
+                  <div className='hamIcon' onClick={toggleDropdown}>
+                    <Image src={Hamburger} />
+                  </div>
                 </div>
-              </div>
               </li>
             </motion.ul>
 
-            <div className="dropdownContainer">
-             
+            <div className='dropdownContainer'>
               {isDropdownOpen && (
-                <div ref={dropdownRef} className="dropdownContent">
-                  <a href="#">Home</a>
+                <div ref={dropdownRef} className='dropdownContent'>
+                  <a href='#'>Home</a>
                   <a
-                    href="https://unilend.gitbook.io/unilend-finance/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href='https://unilend.gitbook.io/unilend-finance/'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
                     Developers
                   </a>
                   <a
-                    href="https://unilend.medium.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href='https://unilend.medium.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
                     Blogs
                   </a>
-                  <a href="https://vote.unilend.finance/" target="_blank">Governance</a>
+                  <a href='https://vote.unilend.finance/' target='_blank'>
+                    Governance
+                  </a>
                 </div>
               )}
             </div>

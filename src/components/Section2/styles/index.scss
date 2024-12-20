@@ -1,19 +1,17 @@
 @import "../../../styles";
 .section2 {
   position: relative;
- 
-  @include lessThan(xl){
-    .col2{
+
+  @include lessThan(xl) {
+    .col2 {
       order: -1;
     }
   }
- 
 
   @media (min-width: 50em) {
     .even-colums {
       grid-auto-columns: 1fr;
     }
-  
   }
 
   position: relative;
@@ -28,17 +26,22 @@
     }
   }
 
-    .mainImage {
-      width: 462px;
-      aspect-ratio: 0.0.832432;
-      height: auto;
-      @include lessThan(sm){
-        width: 292px;
-      }
-      @include lessThan(md){
-        width: 400px;
-      }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .mainImage {
+    width: 462px;
+    aspect-ratio: 0.832432;
+    height: auto;
+    @include lessThan(sm) {
+      width: 292px;
     }
+    @include lessThan(md) {
+      width: 400px;
+    }
+  }
   .gradient {
     &:before {
       content: "";
