@@ -1,7 +1,7 @@
 @import "../../../styles";
 .cta {
   position: relative;
-  max-width: 1800px;  
+  max-width: 1800px;
   margin-inline: auto;
 }
 .cta::before {
@@ -15,9 +15,7 @@
   background-position: left 3rem, right 3rem;
   background-repeat: no-repeat;
 }
-.innerclass{
-
-
+.innerclass {
 }
 .containerProps {
   width: 100% !important ;
@@ -36,7 +34,7 @@
     &:disabled {
       cursor: not-allowed;
     }
-    @include lessThan(xl){
+    @include lessThan(xl) {
       margin-left: 10px;
     }
   }
@@ -89,18 +87,19 @@
       width: calc(100vw - 120px);
     }
     img {
-    
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       @include lessThan(sm) {
         width: 100%;
       }
+      border: 1px solid #000;
     }
     .bx_outer {
       height: 200px;
       padding: 15px;
       border-radius: 0px 0px 24px 24px;
-      border: 1px solid $primary;
+      // border: 1px solid $primary;
+      border: 1px solid #000;
       .bx_inn {
         display: flex;
         justify-content: space-between;

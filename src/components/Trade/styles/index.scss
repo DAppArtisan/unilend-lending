@@ -19,18 +19,18 @@
 }
 
 .outer_bx {
-  gap: 11.5rem;
+  gap: 1.5rem;
   display: flex;
   justify-content: center;
-  @include lessThan(md) {
-    gap: 3.5rem;
-  }
-  @include lessThan(sm) {
-    gap: 3rem;
-  }
-  @include lessThan(lg) {
-    gap: 4rem;
-  }
+  // @include lessThan(md) {
+  //   gap: 3.5rem;
+  // }
+  // @include lessThan(sm) {
+  //   gap: 3rem;
+  // }
+  // @include lessThan(lg) {
+  //   gap: 4rem;
+  // }
   .in_bx {
     z-index: 999;
     width: clamp(12.5rem, 8.6735rem + 16.3265vw, 25rem);
@@ -50,11 +50,11 @@
     img {
       width: 292px;
       height: 65px;
-      @include lessThan(xl){
+      @include lessThan(xl) {
         width: 200px;
         height: 95px;
       }
-      @include lessThan(lg){
+      @include lessThan(lg) {
         width: 170px;
         height: 75px;
       }
@@ -66,8 +66,8 @@
         width: 100px;
         height: 50px;
       }
-      @include lessThan(xs){
-        width:70px;
+      @include lessThan(xs) {
+        width: 70px;
         height: 45px;
       }
     }
