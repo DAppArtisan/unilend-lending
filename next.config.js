@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {};
+// const nextConfig = {
+//   reactStrictMode: true,
+//   distDir: "dist",
+//   // output: "export",
+// };
+module.exports = nextConfig;
