@@ -155,8 +155,13 @@ const Navbar = () => {
                   animate='animate'
                   className='button main-btn'
                 >
-                  {/* <a href='#' target='_blank' rel='noopener noreferrer'> */}
-                  <a href='#'>Lamaa</a>
+                  <a
+                    href='https://lamaa.ai/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Lamaa
+                  </a>
                 </motion.button>
               </li>
               <li>

@@ -91,7 +91,7 @@ const index = () => {
               <a href='#'>
                 <button className='button2'> Learn More</button>
               </a>
-              <a href='#'>
+              <a href='https://lamaa.ai/' target='_blank'>
                 <button className='button2'>Launch App</button>
               </a>
             </div>

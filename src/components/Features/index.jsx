@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import "./index.scss";
 import Image from "next/image";
 import product1 from "../../../public/assets/product1.png";
-import product2 from "../../../public/assets/product2.jpeg";
+import product2 from "../../../public/assets/product2.png";
 import product3 from "../../../public/assets/product3.png";
 
 export default function OurFeatures() {
@@ -13,20 +13,22 @@ export default function OurFeatures() {
     {
       asset: product1,
       description:
-        "UniLend Protocol is a decentralized platform enabling permissionless lending and borrowing through smart contracts using over-collateralized cryptocurrency assets.",
-      link: "https://bit.ly/3FCj5Bn",
+        "UniLend V2 is a decentralized protocol and a platform to enable permissionless lending and borrowing through smart contracts using isolated dual asset pools.",
+      // link: "https://bit.ly/3FCj5Bn",
+      link: "https://v2.unilend.finance/",
     },
     {
       asset: product2,
       description:
-        "Lamaa Create, tokenise, co-own and access modular AI agents built using Lamaa engine. Get in touch with our team to launch your AI Agent and Initial Agent Offering on Lamaa.",
-      link: "#",
+        "Create, tokenise, co-own and access modular AI agents built using Lamaa AI. Get in touch with our team to launch your AI Agent and Initial Agent Offering on Lamaa platform.",
+      link: "https://lamaa.ai/",
     },
     {
       asset: product3,
       description:
         "Numa is the ultimate chain abstraction solution. It allows you to transact on multiple chains using multiple addresses without worrying about managing gas fees in any of your wallets.",
-      link: "https://medium.com/@numachain/introducing-numa-chain-intent-centric-modular-l1-powering-chain-abstraction-6732bbb53cb9",
+      // link: "https://medium.com/@numachain/introducing-numa-chain-intent-centric-modular-l1-powering-chain-abstraction-6732bbb53cb9",
+      link: "https://app.numa.network/",
     },
   ];
   const [activeTab, setActiveTab] = useState(1);
